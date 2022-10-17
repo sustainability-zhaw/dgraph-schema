@@ -7,7 +7,7 @@ LABEL org.opencontainers.image.source="https://github.com/sustainability-zhaw/dg
 COPY schema /data
 COPY entrypoint.sh /data
 
-RUN adduser -S automator && \
+RUN useradd -m -d /data automator && \ && \
     mkdir -p /data && \
     apt-get update && \
     DEBIAN_FRONTEND=noninteractive \
