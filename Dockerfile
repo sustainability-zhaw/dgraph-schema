@@ -27,4 +27,4 @@ RUN chmod 500 /data/entrypoint.sh && \
 
 USER automator
 
-ENTRYPOINT [ "/data/entrypoint.sh" ]
+# ENTRYPOINT [ "/data/entrypoint.sh" ]
