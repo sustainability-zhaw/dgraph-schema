@@ -1,5 +1,4 @@
-type Object {
-    id: ID!
+type InfoObject {
     title: String @search(by: [fulltext])
     authors: [ Person ]
     year: Int
@@ -10,7 +9,7 @@ type Object {
     sdgs: [ SDG ] 
     keywords: [ Keyword ]
     class: [ PublicationClass ]
-    subtype: ObjectType
+    subtype: InfoObjectType
 }
 
 type Person {
@@ -29,7 +28,7 @@ type Person {
     manager: Person @hasInverse(field: directreports)
     extensionattribute1
     department: Department
-    publications: [ Object ] @hasInverse(field: authors)
+    publications: [ InfoObject ] @hasInverse(field: authors)
     LDAPDN: String @id
 }
 
@@ -38,30 +37,30 @@ type Unit {
     team: [ Person ] @hasInverse(field: unit)
 }
 
-type ObjectType { 
+type InfoObjectType { 
     name: String! @id @search(by: [term])
-    objects: [ Object ] @hasInverse(field: subtype)
+    objects: [ InfoObject ] @hasInverse(field: subtype)
 }
 
 type SDG { 
     sdg: Int! @id
     name: String 
-    objects: [ Object ] @hasInverse(field: sdgs)
+    objects: [ InfoObject ] @hasInverse(field: sdgs)
 }
 
 type Department {
     name: String! @id @search(by: [term])
     title: String
-    persons: [ Person ]
+    persons: [ InfoObject ]
 }
 
 type PublicationClass { 
     id: String @id
     name: String
-    Objects: [ Object ] @hasInverse(field: class)
+    Objects: [ InfoObject ] @hasInverse(field: class)
 }
 
 type Keyword {
     name: String! @id
-    Objects: [ Object ] @hasInverse(field: keywords)
+    Objects: [ InfoObject ] @hasInverse(field: keywords)
 }

@@ -12,7 +12,7 @@ RUN useradd -m -d /data automator && \
     jq \
     libjson-pp-perl \
     iputils-ping \
-#    vim \
+    vim \
     && \
     apt-get clean
 
