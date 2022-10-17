@@ -11,6 +11,7 @@ RUN useradd -m -d /data automator && \
     git \
     jq \
     libjson-pp-perl \
+    iputils-ping \
 #    vim \
     && \
     apt-get clean
