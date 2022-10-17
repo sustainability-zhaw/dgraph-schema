@@ -1,27 +1,28 @@
 mutation {
-    addSDG(input: [
-        {sdg: 1, name: "No Poverty"},
-        {sdg: 2, name: "Zero Hunger"},
-        {sdg: 3, name: "Good Health and Well-being"},
-        {sdg: 4, name: "Quality Education"},
-        {sdg: 5, name: "Gender Equality"},
-        {sdg: 6, name: "Clean Water and Sanitation"},
-        {sdg: 7, name: "Affordable and Clean Engery"},
-        {sdg: 8, name: "Decent Work and Economic Growth"},
-        {sdg: 9, name: "Industry, Innovation, Infrastructure"},
-        {sdg: 10, name: "Reduced Inequalities"},
-        {sdg: 11, name: "Sustainabile Cities and Communities"},
-        {sdg: 12, name: "Responsible Consumption and Production"},
-        {sdg: 13, name: "Climate Action"},
-        {sdg: 14, name: "Life Below Water"},
-        {sdg: 15, name: "Life on Land"},
-        {sdg: 16, name: "Peace and Justice"},
-        {sdg: 17, name: "Partnership for the Goals"}
-        
-    ]){
-        sdg
-        name
-    }
+    addSdg(input: [
+        {id: 1, name: "No Poverty"},
+        {id: 2, name: "Zero Hunger"},
+        {id: 3, name: "Good Health and Well-being"},
+        {id: 4, name: "Quality Education"},
+        {id: 5, name: "Gender Equality"},
+        {id: 6, name: "Clean Water and Sanitation"},
+        {id: 7, name: "Affordable and Clean Engery"},
+        {id: 8, name: "Decent Work and Economic Growth"},
+        {id: 9, name: "Industry, Innovation, Infrastructure"},
+        {id: 10, name: "Reduced Inequalities"},
+        {id: 11, name: "Sustainabile Cities and Communities"},
+        {id: 12, name: "Responsible Consumption and Production"},
+        {id: 13, name: "Climate Action"},
+        {id: 14, name: "Life Below Water"},
+        {id: 15, name: "Life on Land"},
+        {id: 16, name: "Peace and Justice"},
+        {id: 17, name: "Partnership for the Goals"}
+    ], upsert: true) {
+        sdg {
+                id
+                name
+            }
+       }
 
     addDepartment(input: [
         {name: "A", title: "Architektur, Gestaltung und Bauingenieurwesen"},
@@ -34,16 +35,20 @@ mutation {
         {name: "W", title: "School of Management and Law"},
         {name: "V", title: "Verwaltung"},
         {name: "R", title: "Rektorat"}
-    ]){
-        name
-        title
+    ], upsert: true) {
+        department {
+                name
+                title
+            }
     }
 
     addInfoObjectType(input: [
         { name: "Publication" },
         { name: "Project" },
         { name: "Module" }
-    ]) {
-        name
+    ], upsert: true) {
+        infoObjectType {
+            name
+        }
     }
 }

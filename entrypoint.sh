@@ -9,5 +9,5 @@ curl -X POST ${DGRAPH_SERVER}/admin/schema --data-binary '@/data/schema/schema.g
 curl -s -X POST \
      ${DGRAPH_SERVER}/graphql \
      -H 'Content-Type: application/graphql' \
-     --data-binary '@/data/schema/constants.graphql' \
+     --data-binary '@/data/schema/constants.graphql'
 

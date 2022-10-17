@@ -28,3 +28,20 @@ reset the entire database
 ```
 curl -X POST localhost:8080/alter -d '{"drop_op": "DATA"}'
 ```
+
+
+Deleting Data: 
+
+```
+mutation {
+  deletePerson(filter: {
+    xid: { eq: "karl" }
+  }) {
+    person {
+      xid
+      name
+      age
+    }
+  }
+}
+```
