@@ -2,9 +2,9 @@ type InfoObject {
     title: String @search(by: [fulltext])
     authors: [ Person ]
     year: Int
-    abstract: String  @search(by: [fulltext])
+    abstract: String @search(by: [fulltext])
     language: String
-    link: String @id @search(by: [term])
+    link: String @id 
     extras: String @search(by: [fulltext])
     sdgs: [ SDG ] 
     keywords: [ Keyword ]
@@ -23,18 +23,17 @@ type Person {
     mail: String
     ipphone: String
     physicaldeliveryofficename: String
-    Unit: Unit
+    team: Team
     directreports: [ Person ] @hasInverse(field: manager)
     manager: Person @hasInverse(field: directreports)
-    extensionattribute1
     department: Department
     publications: [ InfoObject ] @hasInverse(field: authors)
     LDAPDN: String @id
 }
 
-type Unit {
+type Team {
     name: String @id @search(by: [term])
-    team: [ Person ] @hasInverse(field: unit)
+    staff: [ Person ] @hasInverse(field: team)
 }
 
 type InfoObjectType { 
@@ -51,7 +50,7 @@ type SDG {
 type Department {
     name: String! @id @search(by: [term])
     title: String
-    persons: [ InfoObject ]
+    persons: [ Person ]
 }
 
 type PublicationClass { 
