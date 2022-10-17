@@ -1,0 +1,10 @@
+query {
+    queryPerson() {
+        name
+        department
+        publications {
+            title
+            year
+        }
+    }
+}

@@ -1,0 +1,49 @@
+type Object {
+    id: ID!
+    title: String
+    authors: [Person]
+    year: String
+    abstract: String
+    language: String
+    link: String @id
+    extras: String
+    sdgs: [SDG] 
+    keywords: [Keyword]
+    class: [PublicationClass]
+    subtype: ObjectType
+}
+
+type Person {
+    name: String! @id 
+    login: String @id
+    department: Department
+    publications: [Publication] @hasInverse(field: authors)
+}
+
+type ObjectType { 
+    name: String! @id
+    objects: [ Object ] @hasInverse(field: subtype)
+}
+
+type SDG { 
+    sdg: Int! @id
+    name: String
+    objects: [ Object ] @hasInverse(field: sdgs)
+}
+
+type Department {
+    name: String! @id
+    title: String
+    persons: [ Person ]
+}
+
+type PublicationClass { 
+    id: String @id
+    name: String
+    Objects: [ Object ] @hasInverse(field: class)
+}
+
+type Keyword {
+    name: String! @id
+    Objects: [ Object ] @hasInverse(field: keywords)
+}

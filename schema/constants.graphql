@@ -1,0 +1,49 @@
+mutation {
+    addSDG(input: [
+        {sdg: 1, name: "No Poverty"},
+        {sdg: 2, name: "Zero Hunger"},
+        {sdg: 3, name: "Good Health and Well-being"},
+        {sdg: 4, name: "Quality Education"},
+        {sdg: 5, name: "Gender Equality"},
+        {sdg: 6, name: "Clean Water and Sanitation"},
+        {sdg: 7, name: "Affordable and Clean Engery"},
+        {sdg: 8, name: "Decent Work and Economic Growth"},
+        {sdg: 9, name: "Industry, Innovation, Infrastructure"},
+        {sdg: 10, name: "Reduced Inequalities"},
+        {sdg: 11, name: "Sustainabile Cities and Communities"},
+        {sdg: 12, name: "Responsible Consumption and Production"},
+        {sdg: 13, name: "Climate Action"},
+        {sdg: 14, name: "Life Below Water"},
+        {sdg: 15, name: "Life on Land"},
+        {sdg: 16, name: "Peace and Justice"},
+        {sdg: 17, name: "Partnership for the Goals"}
+        
+    ]){
+        sdg
+        name
+    }
+
+    addDepartment(input: [
+        {name: "A", title: "Architektur, Gestaltung und Bauingenieurwesen"},
+        {name: "G", title: "Gesundheit"},
+        {name: "L", title: "Angewandte Linguistik"},
+        {name: "N", title: "Life Sciences and Facility Management"},
+        {name: "P", title: "Angewandte Psychologie"},
+        {name: "S", title: "Soziale Arbeit"},
+        {name: "T", title: "School of Engineering"},
+        {name: "W", title: "School of Management and Law"},
+        {name: "V", title: "Verwaltung"},
+        {name: "R", title: "Rektorat"}
+    ]){
+        name
+        title
+    }
+
+    addObjectType(input: [
+        { name: "Publication" },
+        { name: "Project" },
+        { name: "Module" }
+    ]) {
+        name
+    }
+}
