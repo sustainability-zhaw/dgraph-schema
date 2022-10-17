@@ -1,38 +1,56 @@
 type Object {
     id: ID!
-    title: String
-    authors: [Person]
-    year: String
-    abstract: String
+    title: String @search(by: [fulltext])
+    authors: [ Person ]
+    year: Int
+    abstract: String  @search(by: [fulltext])
     language: String
-    link: String @id
-    extras: String
-    sdgs: [SDG] 
-    keywords: [Keyword]
-    class: [PublicationClass]
+    link: String @id @search(by: [term])
+    extras: String @search(by: [fulltext])
+    sdgs: [ SDG ] 
+    keywords: [ Keyword ]
+    class: [ PublicationClass ]
     subtype: ObjectType
 }
 
 type Person {
-    name: String! @id 
-    login: String @id
+    name: String! @id  @search(by: [term])
+    initials: String @id @search(by: [term])
+    surname: String  @search(by: [term])
+    givenname: String
+    displayname: String
+    gender: String
+    title: String
+    mail: String
+    ipphone: String
+    physicaldeliveryofficename: String
+    Unit: Unit
+    directreports: [ Person ] @hasInverse(field: manager)
+    manager: Person @hasInverse(field: directreports)
+    extensionattribute1
     department: Department
-    publications: [Publication] @hasInverse(field: authors)
+    publications: [ Object ] @hasInverse(field: authors)
+    LDAPDN: String @id
+}
+
+type Unit {
+    name: String @id @search(by: [term])
+    team: [ Person ] @hasInverse(field: unit)
 }
 
 type ObjectType { 
-    name: String! @id
+    name: String! @id @search(by: [term])
     objects: [ Object ] @hasInverse(field: subtype)
 }
 
 type SDG { 
     sdg: Int! @id
-    name: String
+    name: String 
     objects: [ Object ] @hasInverse(field: sdgs)
 }
 
 type Department {
-    name: String! @id
+    name: String! @id @search(by: [term])
     title: String
     persons: [ Person ]
 }

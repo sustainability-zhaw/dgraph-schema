@@ -1,4 +1,3 @@
-# Create runtime (public) container
 FROM ubuntu:22.04
 
 LABEL maintainer="phish108 <cpglahn@gmail.com>"
@@ -12,6 +11,7 @@ RUN useradd -m -d /data automator && \
     git \
     jq \
     libjson-pp-perl \
+#    vim \
     && \
     apt-get clean
 
@@ -19,6 +19,8 @@ WORKDIR /data
 
 COPY schema /data/schema
 COPY entrypoint.sh /data
+
+# COPY try /data/try
 
 RUN chmod 500 /data/entrypoint.sh && \
     chown -R automator /data
