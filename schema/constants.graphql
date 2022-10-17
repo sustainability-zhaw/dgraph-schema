@@ -39,7 +39,7 @@ mutation {
         title
     }
 
-    addObjectType(input: [
+    addInfoObjectType(input: [
         { name: "Publication" },
         { name: "Project" },
         { name: "Module" }
