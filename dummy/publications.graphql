@@ -1,0 +1,13 @@
+mutation {
+    addPerson(input:[
+        {}
+     ], upsert: true){
+        person {
+            name 
+            initials
+            department {
+                name
+            }
+        }
+    }
+}
