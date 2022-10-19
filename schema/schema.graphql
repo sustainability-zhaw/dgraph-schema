@@ -1,15 +1,15 @@
 type InfoObject {
     title: String @search(by: [fulltext])
-    authors: [ Person ]
-    year: Int
+    authors: [ Person ] 
+    year: Int @search 
     abstract: String @search(by: [fulltext])
     language: String
     link: String @id 
     extras: String @search(by: [fulltext])
-    sdgs: [ Sdg ] 
+    sdgs: [ Sdg ] @search(id: )
     keywords: [ Keyword ]
     class: [ PublicationClass ]
-    subtype: InfoObjectType
+    subtype: InfoObjectType 
     category: InfoObjectType
 }
 
@@ -27,7 +27,7 @@ type Person {
     team: Team
     directreports: [ Person ] @hasInverse(field: manager)
     manager: Person @hasInverse(field: directreports)
-    department: Department
+    department: Department 
     objects: [ InfoObject ] @hasInverse(field: authors)
     LDAPDN: String @id
 }
@@ -43,7 +43,7 @@ type InfoObjectType {
 }
 
 type Sdg { 
-    id: Int! @id
+    id: Int! @id @search
     name: String 
     objects: [ InfoObject ] @hasInverse(field: sdgs)
 }
@@ -55,12 +55,12 @@ type Department {
 }
 
 type PublicationClass { 
-    id: String @id
-    name: String
+    id: String @id @search
+    name: String @search(by: [term])
     objects: [ InfoObject ] @hasInverse(field: class)
 }
 
 type Keyword {
-    name: String! @id
+    name: String! @id @search(by: [term])
     objects: [ InfoObject ] @hasInverse(field: keywords)
 }

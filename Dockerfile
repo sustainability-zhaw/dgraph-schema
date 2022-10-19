@@ -10,9 +10,9 @@ RUN useradd -m -d /data automator && \
     curl \
     # git \
     # jq \
-    # libjson-pp-perl \
-    # iputils-ping \
-    # vim \
+    libjson-pp-perl \
+    iputils-ping \
+    vim \
     && \
     apt-get clean
 
