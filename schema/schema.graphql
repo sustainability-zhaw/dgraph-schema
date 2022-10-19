@@ -10,6 +10,7 @@ type InfoObject {
     keywords: [ Keyword ]
     class: [ PublicationClass ]
     subtype: InfoObjectType
+    category: InfoObjectType
 }
 
 type Person {
