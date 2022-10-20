@@ -1,219 +1,217 @@
 mutation {
     addPerson(input:[
         {
-name: "Karakas, Esra"
+fullname: "Karakas, Esra"
 },
 {
-name: "Meyer, Luca"
+fullname: "Meyer, Luca"
 },
 {
-name: "Stohner, Jürgen",
+fullname: "Stohner, Jürgen",
             initials: "sthj",
-            department:  "N"
+            department:  N
 },
 {
-name: "Dia, Nay C."
+fullname: "Dia, Nay C."
 },
 {
-name: "Morinière, Lucas"
+fullname: "Morinière, Lucas"
 },
 {
-name: "Cottyn, Bart"
+fullname: "Cottyn, Bart"
 },
 {
-name: "Bernal, Eduardo"
+fullname: "Bernal, Eduardo"
 },
 {
-name: "Jacobs, Jonathan M."
+fullname: "Jacobs, Jonathan M."
 },
 {
-name: "Koebnik, Ralf"
+fullname: "Koebnik, Ralf"
 },
 {
-name: "Osdaghi, Ebrahim"
+fullname: "Osdaghi, Ebrahim"
 },
 {
-name: "Potnis, Neha"
+fullname: "Potnis, Neha"
 },
 {
-name: "Pothier, Joël F.",
+fullname: "Pothier, Joël F.",
             initials: "poth",
-            department: "N"
+            department: N
 },
 {
-name: "Bokusheva, Raushan",
+fullname: "Bokusheva, Raushan",
             initials: "boku",
-            department: "N"
+            department: N
 },
 {
-name: "Bozzola, Martina",
+fullname: "Bozzola, Martina",
             initials: "bozz",
-            department: "N"
+            department: N
 },
 {
-name: "Kunze, Sven",
+fullname: "Kunze, Sven",
             initials: "kunv",
-            department: "N"
+            department: N
 },
 {
-name: "Tribelhorn, Roman"
+fullname: "Tribelhorn, Roman"
 },
 {
-name: "Loh Joey, Krystal"
+fullname: "Loh Joey, Krystal"
 },
 {
-name: "Mousavi, Sara"
+fullname: "Mousavi, Sara"
 },
 {
-name: "Filipová, Lucie"
+fullname: "Filipová, Lucie"
 },
 {
-name: "Ebert, Jürgen",
+fullname: "Ebert, Jürgen",
             initials: "ebju",
-            department: "N"
+            department: N
 },
 {
-name: "Heiligtag, Florian Johannes"
+fullname: "Heiligtag, Florian Johannes"
 },
 {
-name: "Daumke, Ralph"
+fullname: "Daumke, Ralph"
 },
 {
-name: "Loser, Werner"
+fullname: "Loser, Werner"
 },
 {
-name: "Ledergerber, Bettina"
+fullname: "Ledergerber, Bettina"
 },
 {
-name: "Frank, Brian"
+fullname: "Frank, Brian"
 },
 {
-name: "Adlhart, Christian",
+fullname: "Adlhart, Christian",
             initials: "adas",
-            department: "N"
+            department: N
 },
 {
-name: "Baumann, Mirja"
+fullname: "Baumann, Mirja"
 },
 {
-name: "Brander, Sarah"
+fullname: "Brander, Sarah"
 },
 {
-name: "Osechas, Okuary"
+fullname: "Osechas, Okuary"
 },
 {
-name: "Felux, Michael",
+fullname: "Felux, Michael",
             initials: "felu",
-            department: "T"
+            department: T
 },
 {
-name: "Fohlmeister, Friederike"
+fullname: "Fohlmeister, Friederike"
 },
 {
-name: "Dautermann, Thomas"
+fullname: "Dautermann, Thomas"
 },
 {
-name: "Boogen, Nina",
+fullname: "Boogen, Nina",
             initials: "boog",
-            department: "W"
+            department: W
 },
 {
-name: "Filippini, Massimo"
+fullname: "Filippini, Massimo"
 },
 {
-name: "Martinez-Cruz, Adan L."
+fullname: "Martinez-Cruz, Adan L."
 },
 {
-name: "Senn, Smeralda"
+fullname: "Senn, Smeralda"
 },
 {
-name: "Volken, Thomas"
+fullname: "Volken, Thomas"
 },
 {
-name: "Rösner, Susanne"
+fullname: "Rösner, Susanne"
 },
 {
-name: "Wieber, Frank"
+fullname: "Wieber, Frank"
 },
 {
-name: "Pehlke-Milde, Jessica",
+fullname: "Pehlke-Milde, Jessica",
             initials: "pehl",
-            department: "G"
+            department: G
 },
 {
-name: "Radu, Irina",
+fullname: "Radu, Irina",
             initials: "radu",
-            department: "G"
+            department: G
 },
 {
-name: "Meyer, Yvonne"
+fullname: "Meyer, Yvonne"
 },
 {
-name: "Gouilhers, Solène"
+fullname: "Gouilhers, Solène"
 },
 {
-name: "Hammer, Raphaël"
+fullname: "Hammer, Raphaël"
 },
 {
-name: "Zysset, Annina",
+fullname: "Zysset, Annina",
             initials: "zyss",
-            department: "G"
+            department: G
 },
 {
-name: "Amendola, Simone"
+fullname: "Amendola, Simone"
 },
 {
-name: "von Wyl, Agnes",
+fullname: "von Wyl, Agnes",
             initials: "vonw",
-            department: "P"
+            department: P
 },
 {
-name: "Dratva, Julia",
+fullname: "Dratva, Julia",
             initials: "drat",
-            department: "G"
+            department: G
 },
 {
-name: "Bachmann, Oliver",
+fullname: "Bachmann, Oliver",
             initials: "bacl",
-            department: "W"
+            department: W
 },
 {
-name: "Gründler, Klaus"
+fullname: "Gründler, Klaus"
 },
 {
-name: "Morales, Jonas"
+fullname: "Morales, Jonas"
 },
 {
-name: "Potrafke, Niklas"
+fullname: "Potrafke, Niklas"
 },
 {
-name: "Seiberlich, Ruben",
+fullname: "Seiberlich, Ruben",
             initials: "seib",
-            department: "W"
+            department: W
 },
 {
-name: "Petrik, Andreas",
+fullname: "Petrik, Andreas",
             initials: "pean",
-            department: "W"
+            department: W
 },
 {
-name: "Föhn, Martina",
+fullname: "Föhn, Martina",
             initials: "fhia",
-            department: "N"
+            department: N
 },
 {
-name: "Nydegger, Vera"
+fullname: "Nydegger, Vera"
 },
 {
-name: "Marcone, Roberto Davide"
+fullname: "Marcone, Roberto Davide"
 }
-     ], upsert: true){
+     ]){
         person {
-            name 
+            fullname 
             initials
-            department {
-                name
-            }
+            department 
         }
     }
 }
