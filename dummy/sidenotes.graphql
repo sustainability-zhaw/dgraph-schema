@@ -1,0 +1,15 @@
+query { 
+    queryPerson(filter: { department: { in: N }}) {
+    objects(filter: { sdgs: {in: sdg_2 } }) {
+                authors {
+                    fullname
+                }
+                year 
+                sdgs 
+                subtype {
+                    name
+                }
+
+        } 
+    }
+}

@@ -48,7 +48,7 @@ type InfoObject {
 }
 
 type Person {
-    fullname: String!  @search(by: [term])
+    fullname: String! @id @search(by: [exact])
     initials: String @search(by: [exact])
     surname: String  @search(by: [term])
     givenname: String
