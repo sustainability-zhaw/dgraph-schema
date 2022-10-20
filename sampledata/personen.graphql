@@ -1,0 +1,219 @@
+mutation {
+    addPerson(input:[
+        {
+name: "Karakas, Esra"
+},
+{
+name: "Meyer, Luca"
+},
+{
+name: "Stohner, Jürgen",
+            initials: "sthj",
+            department:  "N"
+},
+{
+name: "Dia, Nay C."
+},
+{
+name: "Morinière, Lucas"
+},
+{
+name: "Cottyn, Bart"
+},
+{
+name: "Bernal, Eduardo"
+},
+{
+name: "Jacobs, Jonathan M."
+},
+{
+name: "Koebnik, Ralf"
+},
+{
+name: "Osdaghi, Ebrahim"
+},
+{
+name: "Potnis, Neha"
+},
+{
+name: "Pothier, Joël F.",
+            initials: "poth",
+            department: "N"
+},
+{
+name: "Bokusheva, Raushan",
+            initials: "boku",
+            department: "N"
+},
+{
+name: "Bozzola, Martina",
+            initials: "bozz",
+            department: "N"
+},
+{
+name: "Kunze, Sven",
+            initials: "kunv",
+            department: "N"
+},
+{
+name: "Tribelhorn, Roman"
+},
+{
+name: "Loh Joey, Krystal"
+},
+{
+name: "Mousavi, Sara"
+},
+{
+name: "Filipová, Lucie"
+},
+{
+name: "Ebert, Jürgen",
+            initials: "ebju",
+            department: "N"
+},
+{
+name: "Heiligtag, Florian Johannes"
+},
+{
+name: "Daumke, Ralph"
+},
+{
+name: "Loser, Werner"
+},
+{
+name: "Ledergerber, Bettina"
+},
+{
+name: "Frank, Brian"
+},
+{
+name: "Adlhart, Christian",
+            initials: "adas",
+            department: "N"
+},
+{
+name: "Baumann, Mirja"
+},
+{
+name: "Brander, Sarah"
+},
+{
+name: "Osechas, Okuary"
+},
+{
+name: "Felux, Michael",
+            initials: "felu",
+            department: "T"
+},
+{
+name: "Fohlmeister, Friederike"
+},
+{
+name: "Dautermann, Thomas"
+},
+{
+name: "Boogen, Nina",
+            initials: "boog",
+            department: "W"
+},
+{
+name: "Filippini, Massimo"
+},
+{
+name: "Martinez-Cruz, Adan L."
+},
+{
+name: "Senn, Smeralda"
+},
+{
+name: "Volken, Thomas"
+},
+{
+name: "Rösner, Susanne"
+},
+{
+name: "Wieber, Frank"
+},
+{
+name: "Pehlke-Milde, Jessica",
+            initials: "pehl",
+            department: "G"
+},
+{
+name: "Radu, Irina",
+            initials: "radu",
+            department: "G"
+},
+{
+name: "Meyer, Yvonne"
+},
+{
+name: "Gouilhers, Solène"
+},
+{
+name: "Hammer, Raphaël"
+},
+{
+name: "Zysset, Annina",
+            initials: "zyss",
+            department: "G"
+},
+{
+name: "Amendola, Simone"
+},
+{
+name: "von Wyl, Agnes",
+            initials: "vonw",
+            department: "P"
+},
+{
+name: "Dratva, Julia",
+            initials: "drat",
+            department: "G"
+},
+{
+name: "Bachmann, Oliver",
+            initials: "bacl",
+            department: "W"
+},
+{
+name: "Gründler, Klaus"
+},
+{
+name: "Morales, Jonas"
+},
+{
+name: "Potrafke, Niklas"
+},
+{
+name: "Seiberlich, Ruben",
+            initials: "seib",
+            department: "W"
+},
+{
+name: "Petrik, Andreas",
+            initials: "pean",
+            department: "W"
+},
+{
+name: "Föhn, Martina",
+            initials: "fhia",
+            department: "N"
+},
+{
+name: "Nydegger, Vera"
+},
+{
+name: "Marcone, Roberto Davide"
+}
+     ], upsert: true){
+        person {
+            name 
+            initials
+            department {
+                name
+            }
+        }
+    }
+}

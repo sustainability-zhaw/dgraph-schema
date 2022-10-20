@@ -1,46 +1,4 @@
 mutation {
-    addSdg(input: [
-        {id: 1, name: "No Poverty"},
-        {id: 2, name: "Zero Hunger"},
-        {id: 3, name: "Good Health and Well-being"},
-        {id: 4, name: "Quality Education"},
-        {id: 5, name: "Gender Equality"},
-        {id: 6, name: "Clean Water and Sanitation"},
-        {id: 7, name: "Affordable and Clean Engery"},
-        {id: 8, name: "Decent Work and Economic Growth"},
-        {id: 9, name: "Industry, Innovation, Infrastructure"},
-        {id: 10, name: "Reduced Inequalities"},
-        {id: 11, name: "Sustainabile Cities and Communities"},
-        {id: 12, name: "Responsible Consumption and Production"},
-        {id: 13, name: "Climate Action"},
-        {id: 14, name: "Life Below Water"},
-        {id: 15, name: "Life on Land"},
-        {id: 16, name: "Peace and Justice"},
-        {id: 17, name: "Partnership for the Goals"}
-    ], upsert: true) {
-        sdg {
-                id
-                name
-            }
-       }
-
-    addDepartment(input: [
-        {name: "A", title: "Architektur, Gestaltung und Bauingenieurwesen"},
-        {name: "G", title: "Gesundheit"},
-        {name: "L", title: "Angewandte Linguistik"},
-        {name: "N", title: "Life Sciences and Facility Management"},
-        {name: "P", title: "Angewandte Psychologie"},
-        {name: "S", title: "Soziale Arbeit"},
-        {name: "T", title: "School of Engineering"},
-        {name: "W", title: "School of Management and Law"},
-        {name: "V", title: "Verwaltung"},
-        {name: "R", title: "Rektorat"}
-    ], upsert: true) {
-        department {
-                name
-                title
-            }
-    }
 
     addInfoObjectType(input: [
         { name: "Publication" },

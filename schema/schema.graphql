@@ -1,20 +1,54 @@
+enum Department {
+    A
+    G
+    L
+    N
+    P
+    S
+    T
+    W
+    R
+    V
+}
+
+enum Sdg {
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    11
+    12
+    13
+    14
+    15
+    16
+    17
+}
+
 type InfoObject {
     title: String @search(by: [fulltext])
     authors: [ Person ] 
     year: Int @search 
     abstract: String @search(by: [fulltext])
     language: String
-    link: String @id 
+    link: String! @id 
     extras: String @search(by: [fulltext])
-    sdgs: [ Sdg ] @search(id: )
+    sdgs: [ Sdg ] @search
     keywords: [ Keyword ]
     class: [ PublicationClass ]
     subtype: InfoObjectType 
     category: InfoObjectType
+    department: [Department] @search
 }
 
 type Person {
-    name: String! @id  @search(by: [term])
+    fullname: String!  @search(by: [term])
     initials: String @id @search(by: [term])
     surname: String  @search(by: [term])
     givenname: String
@@ -27,13 +61,13 @@ type Person {
     team: Team
     directreports: [ Person ] @hasInverse(field: manager)
     manager: Person @hasInverse(field: directreports)
-    department: Department 
+    department: Department @search
     objects: [ InfoObject ] @hasInverse(field: authors)
-    LDAPDN: String @id
+    LDAPDN: String @search(by: [exact])
 }
 
 type Team {
-    name: String @id @search(by: [term])
+    name: String! @id @search(by: [term])
     staff: [ Person ] @hasInverse(field: team)
 }
 
@@ -42,11 +76,6 @@ type InfoObjectType {
     objects: [ InfoObject ] @hasInverse(field: subtype)
 }
 
-type Sdg { 
-    id: Int! @id @search
-    name: String 
-    objects: [ InfoObject ] @hasInverse(field: sdgs)
-}
 
 type Department {
     name: String! @id @search(by: [term])
