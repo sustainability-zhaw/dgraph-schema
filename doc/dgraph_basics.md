@@ -7,7 +7,7 @@ Because the database sits behind the proxy and does not expose the ports, we nee
 To install or update a schema: 
 
 ```
-curl -X POST http://localhost:8080/admin/schema --data-binary '@configs/dgraph_schema.graphql'
+curl -X POST http://localhost:8080/admin/schema --data-binary '@schema/dgraph_schema.graphql'
 ```
 
 
