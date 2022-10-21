@@ -1,14 +1,14 @@
 enum Department {
-    A
-    G
-    L
-    N
-    P
-    S
-    T
-    W
-    R
-    V
+    department_A
+    department_G
+    department_L
+    department_N
+    department_P
+    department_S
+    department_T
+    department_W
+    department_R
+    department_V
 }
 
 enum Sdg {
@@ -32,13 +32,13 @@ enum Sdg {
 }
 
 type InfoObject {
-    title: String @search(by: [fulltext])
+    title: String @search(by: [term])
     persons: [ Person ] 
     year: Int @search 
-    abstract: String @search(by: [fulltext])
+    abstract: String @search(by: [term])
     language: String
     link: String! @id @search(by: [exact])
-    extras: String @search(by: [fulltext])
+    extras: String @search(by: [term])
     sdgs: [ Sdg ] @search
     keywords: [ Keyword ]
     class: [ PublicationClass ]
@@ -48,7 +48,7 @@ type InfoObject {
 }
 
 type Person {
-    fullname: String! @id @search(by: [exact])
+    fullname: String! @id @search(by: [term])
     initials: String @search(by: [exact])
     surname: String  @search(by: [term])
     givenname: String
@@ -72,7 +72,7 @@ type Team {
 }
 
 type InfoObjectType { 
-    name: String! @id @search(by: [term])
+    name: String! @id @search(by: [exact])
     objects: [ InfoObject ] @hasInverse(field: subtype)
 }
 

@@ -1,19 +1,24 @@
 
 { 
     queryInfoObject(filter: {
-      sdgs: { in: sdg_2 } 
+       sdgs: { in: [ sdg_3, sdg_14 ]}
+       and: {
+        title: { allofterms: "Alkoholkonsum"},
+        or: {title: {allofterms: "Waldtherapie als innovative Ansätze"}}
+       }
     }) @cascade(fields: [ "persons", "category"]) {
-        
-    persons(filter: { department: { in:  [W, T, N] } }) {
-        fullname
+
+    persons( filter: { department: {in: [department_N, department_P, department_G] } }) {
         initials
+        department
     }
-    category(filter: { name: { eq: "Publication" } } ) {
+    category(filter: { name: { in: [ "Publication" ] } } ) {
         name
     }
     authors: persons {
         fullname
     }
+    title
     year 
     sdgs
     link
