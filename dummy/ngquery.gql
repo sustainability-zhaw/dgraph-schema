@@ -1,0 +1,22 @@
+
+{ 
+    queryInfoObject(filter: {
+      sdgs: { in: sdg_2 } 
+    }) @cascade(fields: [ "persons", "category"]) {
+        
+    persons(filter: { department: { in:  [W, T, N] } }) {
+        fullname
+        initials
+    }
+    category(filter: { name: { eq: "Publication" } } ) {
+        name
+    }
+    authors: persons {
+        fullname
+    }
+    year 
+    sdgs
+    link
+        } 
+}
+

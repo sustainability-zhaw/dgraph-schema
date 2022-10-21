@@ -33,11 +33,11 @@ enum Sdg {
 
 type InfoObject {
     title: String @search(by: [fulltext])
-    authors: [ Person ] 
+    persons: [ Person ] 
     year: Int @search 
     abstract: String @search(by: [fulltext])
     language: String
-    link: String! @id 
+    link: String! @id @search(by: [exact])
     extras: String @search(by: [fulltext])
     sdgs: [ Sdg ] @search
     keywords: [ Keyword ]
@@ -62,7 +62,7 @@ type Person {
     directreports: [ Person ] @hasInverse(field: manager)
     manager: Person @hasInverse(field: directreports)
     department: Department @search
-    objects: [ InfoObject ] @hasInverse(field: authors)
+    objects: [ InfoObject ] @hasInverse(field: persons)
     LDAPDN: String @search(by: [exact])
 }
 
