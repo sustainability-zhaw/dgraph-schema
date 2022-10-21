@@ -32,13 +32,13 @@ enum Sdg {
 }
 
 type InfoObject {
-    title: String @search(by: [term])
+    title: String @search(by: [fulltext])
     persons: [ Person ] 
     year: Int @search 
-    abstract: String @search(by: [term])
+    abstract: String @search(by: [fulltext])
     language: String
     link: String! @id @search(by: [exact])
-    extras: String @search(by: [term])
+    extras: String @search(by: [fulltext])
     sdgs: [ Sdg ] @search
     keywords: [ Keyword ]
     class: [ PublicationClass ]
