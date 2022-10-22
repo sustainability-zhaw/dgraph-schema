@@ -1,4 +1,4 @@
-enum Department {
+enum eDepartment {
     department_A
     department_G
     department_L
@@ -11,7 +11,7 @@ enum Department {
     department_V
 }
 
-enum Sdg {
+enum eSdg {
     sdg_1
     sdg_2
     sdg_3
@@ -31,6 +31,16 @@ enum Sdg {
     sdg_17
 }
 
+type Sdg {
+    id: eSdg @search
+    objects: [InfoObject] @hasInverse(field: sdgs) 
+}
+
+type Department {
+    id: eDepartment @search
+    objects: [InfoObject] @hasInverse(field: department) 
+}
+
 type InfoObject {
     title: String @search(by: [fulltext])
     persons: [ Person ] 
@@ -39,12 +49,12 @@ type InfoObject {
     language: String
     link: String! @id @search(by: [exact])
     extras: String @search(by: [fulltext])
-    sdgs: [ Sdg ] @search
+    sdgs: [ Sdg ] 
     keywords: [ Keyword ]
     class: [ PublicationClass ]
     subtype: InfoObjectType 
     category: InfoObjectType
-    department: [Department] @search
+    departments: [Department]
 }
 
 type Person {
@@ -61,7 +71,7 @@ type Person {
     team: Team
     directreports: [ Person ] @hasInverse(field: manager)
     manager: Person @hasInverse(field: directreports)
-    department: Department @search
+    department: Department
     objects: [ InfoObject ] @hasInverse(field: persons)
     LDAPDN: String @search(by: [exact])
 }
