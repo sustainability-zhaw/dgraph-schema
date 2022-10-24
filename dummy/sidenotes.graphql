@@ -12,7 +12,8 @@
       20
   ) @cascade(
     fields: [
-      "sdgs"
+      "sdgs",
+      "departments"
     ]
   ) {
     title
@@ -63,7 +64,18 @@
       filter: {
         id: {
           in: [
-            sdg_2
+            sdg_3
+          ]
+        }
+      }
+    ) {
+      id
+    }
+    departments (
+      filter: {
+        id: {
+          in: [
+            department_G
           ]
         }
       }
