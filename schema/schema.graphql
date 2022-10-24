@@ -38,7 +38,8 @@ type Sdg {
 
 type Department {
     id: eDepartment @search
-    objects: [InfoObject] @hasInverse(field: department) 
+    objects: [InfoObject] @hasInverse(field: departments) 
+    persons: [Person] @hasInverse(field: department)
 }
 
 type InfoObject {

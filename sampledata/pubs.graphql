@@ -12,7 +12,7 @@ title: "Lebensdauerverlängerung von Mobiltelefonen : der Entscheidungsprozess b
  subtype: { name: "Thesis: Bachelor" }
  language: "de"
  category: { name: "Publication" }
- department: [ {id: department_N}] 
+ departments: [ {id: department_N}] 
 }, 
 {
 title: "Phosphorrückgewinnung aus kommunalem Klärschlamm mittels hydrothermaler Karbonisierung und Säureauswaschung : Einfluss von Kohlendioxid-Eingasung auf den Prozess der Hydrothermalen Karbonisierung und der Vergleich verschiedener Nachweismethoden"
@@ -26,7 +26,7 @@ title: "Phosphorrückgewinnung aus kommunalem Klärschlamm mittels hydrothermale
  subtype: { name: "Thesis: Bachelor" }
  language: "de"
  category: { name: "Publication" }
- department: [ {id: department_N} ] 
+ departments: [ {id: department_N} ] 
 }, 
 {
 title: "Does exhaled aerosol increase with COVID-19 infection correlate with body mass index-years?"
@@ -40,7 +40,7 @@ title: "Does exhaled aerosol increase with COVID-19 infection correlate with bod
  subtype: { name: "Beitrag in wissenschaftlicher Zeitschrift" }
  language: "en"
  category: { name: "Publication" }
- department: [{id: department_N}] 
+ departments: [{id: department_N}] 
 }, 
 {
 title: "Xanthomonas hortorum – beyond gardens : current taxonomy, genomics, and virulence repertoires"
@@ -54,7 +54,7 @@ title: "Xanthomonas hortorum – beyond gardens : current taxonomy, genomics, an
  subtype: { name: "Beitrag in wissenschaftlicher Zeitschrift" }
  language: "en"
  category: { name: "Publication" }
-  department: [{id: department_N} ] 
+  departments: [{id: department_N} ] 
 }, 
 {
 title: "Modelling the impact of climate change on agriculture productivity in Russia"
@@ -68,7 +68,7 @@ title: "Modelling the impact of climate change on agriculture productivity in Ru
  subtype: { name: "Konferenz: Paper" }
  language: "en"
  category: { name: "Publication" }
-  department: [{id: department_N}] 
+  departments: [{id: department_N}] 
 }, 
 {
 title: "Duales Dachbegrünungssystem : «Orchideenwiesen und Weinanbau übereinander» am Beispiel von Projekt KHK St. Gallen"
@@ -82,7 +82,7 @@ title: "Duales Dachbegrünungssystem : «Orchideenwiesen und Weinanbau übereina
  subtype: { name: "Thesis: Bachelor" }
  language: "de"
  category: { name: "Publication" }
-  department: [{id: department_N}] 
+  departments: [{id: department_N}] 
 }, 
 {
 title: "The strategic use of microlearning as a training approach for the purpose of workforce skills development in multinational corporations"
@@ -97,7 +97,7 @@ title: "The strategic use of microlearning as a training approach for the purpos
  subtype: { name: "Thesis: Master" }
  language: "en"
  category: { name: "Publication" }
-  department: [{id: department_W}] 
+  departments: [{id: department_W}] 
 }, 
 {
 title: "Clarification of yeast cell suspensions by a highly porous polyamide nanofiber sponge"
@@ -112,7 +112,7 @@ title: "Clarification of yeast cell suspensions by a highly porous polyamide nan
  subtype: { name: "Beitrag in wissenschaftlicher Zeitschrift" }
  language: "en"
  category: { name: "Publication" }
-  department: [{id: department_N}] 
+  departments: [{id: department_N}] 
 }, 
 {
 title: "Supinationstrauma: Tape oder Stabilisationsschiene? : welches Hilfsmittel bringt während der Rehabilitation eines Supinationstraumas einen besseren Nutzen?"
@@ -127,7 +127,7 @@ title: "Supinationstrauma: Tape oder Stabilisationsschiene? : welches Hilfsmitte
  subtype: { name: "Thesis: Bachelor" }
  language: "de"
  category: { name: "Publication" }
-  department: [{id: department_G}] 
+  departments: [{id: department_G}] 
 }, 
 {
 title: "Impact of RFI on GNSS and avionics : a view from the cockpit"
@@ -142,7 +142,7 @@ title: "Impact of RFI on GNSS and avionics : a view from the cockpit"
  subtype: { name: "Konferenz: Sonstiges" }
  language: "en"
  category: { name: "Publication" }
-  department: [{id: department_T}] 
+  departments: [{id: department_T}] 
 }, 
 {
 title: "Value of co-benefits from energy saving ventilation systems : contingent valuations on Swiss home owners"
@@ -157,7 +157,7 @@ title: "Value of co-benefits from energy saving ventilation systems : contingent
  subtype: { name: "Working Paper – Gutachten – Studie" }
  language: "en"
  category: { name: "Publication" }
-  department: [{id: department_W}] 
+  departments: [{id: department_W}] 
 }, 
 {
 title: "What is the relapse risk during treatment? : survivor analysis of single and multiple relapse events in inpatients with alcohol use disorder as part of an observational study"
@@ -172,7 +172,7 @@ title: "What is the relapse risk during treatment? : survivor analysis of single
  subtype: { name: "Beitrag in wissenschaftlicher Zeitschrift" }
  language: "en"
  category: { name: "Publication" }
-  department: [{id: department_G}] 
+  departments: [{id: department_G}] 
 }, 
 {
 title: "Moderater Alkoholkonsum während Schwangerschaft und Stillzeit"
@@ -187,7 +187,7 @@ title: "Moderater Alkoholkonsum während Schwangerschaft und Stillzeit"
  subtype: { name: "Konferenz: Sonstiges" }
  language: "de"
  category: { name: "Publication" }
-  department: [{id: department_G}] 
+  departments: [{id: department_G}] 
 }, 
 {
 title: "Change in alcohol consumption and binge drinking in university students during the early COVID-19 pandemic"
@@ -202,7 +202,7 @@ title: "Change in alcohol consumption and binge drinking in university students 
  subtype: { name: "Beitrag in wissenschaftlicher Zeitschrift" }
  language: "en"
  category: { name: "Publication" }
- department: [ {id: department_G}, {id:  department_P} ] 
+ departments: [ {id: department_G}, {id:  department_P} ] 
 }, 
 {
 title: "Inflationserwartungen und parteipolitische Überzeugungen : empirische Evidenz aus den Vereinigten Staaten von Amerika"
@@ -217,7 +217,7 @@ title: "Inflationserwartungen und parteipolitische Überzeugungen : empirische E
  subtype: { name: "Beitrag in wissenschaftlicher Zeitschrift" }
  language: "de"
  category: { name: "Publication" }
-  department: [{id: department_W}] 
+  departments: [{id: department_W}] 
 }, 
 {
 title: "Umkleidezeit – aktueller Stand : rechtliche Qualifikation und Rechtsfolgen"
@@ -232,7 +232,7 @@ title: "Umkleidezeit – aktueller Stand : rechtliche Qualifikation und Rechtsfo
  subtype: { name: "Beitrag in Magazin oder Zeitung" }
  language: "de"
  category: { name: "Publication" }
-  department: [{id: department_W}] 
+  departments: [{id: department_W}] 
 }, 
 {
 title: "Waldbaden und Waldtherapie als innovative Ansätze mit gesundheitsförderndem Potenzial"
@@ -247,7 +247,7 @@ title: "Waldbaden und Waldtherapie als innovative Ansätze mit gesundheitsförde
  subtype: { name: "Beitrag in wissenschaftlicher Zeitschrift" }
  language: "de"
  category: { name: "Publication" }
-  department: [{id: department_N}] 
+  departments: [{id: department_N}] 
 }, 
 {
 title: "Suffizienz in der Ernährung : Entwicklung und Durchführung eines Workshops zur Förderung suffizienter Ernährungsweisen"
@@ -262,7 +262,7 @@ title: "Suffizienz in der Ernährung : Entwicklung und Durchführung eines Works
  subtype: { name: "Thesis: Bachelor" }
  language: "de"
  category: { name: "Publication" }
-  department: [{id: department_G}] 
+  departments: [{id: department_G}] 
 }, 
 {
 title: "Indicators for urban circular bioeconomy development : a systematic review of EU-wide national bioeconomy monitoring frameworks and their utility to urban policy-makers"
@@ -277,7 +277,7 @@ title: "Indicators for urban circular bioeconomy development : a systematic revi
  subtype: { name: "Thesis: Master" }
  language: "en"
  category: { name: "Publication" }
-  department: [{id: department_N}] 
+  departments: [{id: department_N}] 
 }
 ], upsert: true) {
     infoObject {
@@ -298,7 +298,7 @@ title: "Indicators for urban circular bioeconomy development : a systematic revi
         sdgs {
             id
         }
-        department {
+        departments {
             id
         }
         subtype {

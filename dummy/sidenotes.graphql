@@ -1,15 +1,74 @@
-query { 
-    queryPerson(filter: { department: { in: N }}) {
-    objects(filter: { sdgs: {in: sdg_2 } }) {
-                authors {
-                    fullname
-                }
-                year 
-                sdgs 
-                subtype {
-                    name
-                }
-
-        } 
+{
+  queryInfoObject (
+    order: {
+      asc:
+        year,
+      then: {
+        asc:
+          title
+      }
+    },
+    first:
+      20
+  ) @cascade(
+    fields: [
+      "sdgs"
+    ]
+  ) {
+    title
+    abstract
+    year
+    language
+    link
+    extras
+    authors:
+      persons {
+      fullname
     }
+    class {
+      id
+      name
+    }
+    subtype {
+      name
+    }
+    keywords {
+      name
+    }
+    sdg:
+      sdgs {
+      id
+    }
+    persons (
+      filter: {
+        has: [
+          department
+        ]
+      }
+    ) {
+      fullname
+      initials
+      title
+      mail
+      ipphone
+      gender
+      department {
+        id
+      }
+      team {
+        name
+      }
+    }
+    sdgs (
+      filter: {
+        id: {
+          in: [
+            sdg_2
+          ]
+        }
+      }
+    ) {
+      id
+    }
+  }
 }
