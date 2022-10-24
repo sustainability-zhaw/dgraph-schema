@@ -8,11 +8,11 @@ title: "Lebensdauerverlängerung von Mobiltelefonen : der Entscheidungsprozess b
  keywords: [{ name: "Bodenwirtschaft und Ressourcen" }, { name: "Elektro-, Kommunikations-, Steuerungs- und Regelungstechnik" }]
  class: [{ id: "333" name: "Bodenwirtschaft und Ressourcen" }, { id: "621.3" name: "Elektro-, Kommunikations-, Steuerungs- und Regelungstechnik" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24361"
- sdgs: [{id: sdg_12} , {id: sdg_7} ]
+ sdgs: [{id: "sdg_12"} , {id: "sdg_7"} ]
  subtype: { name: "Thesis: Bachelor" }
  language: "de"
- category: { name: "Publication" }
- departments: [ {id: department_N}] 
+ category: { name: "publications" }
+ departments: [ {id: "department_N"}] 
 }, 
 {
 title: "Phosphorrückgewinnung aus kommunalem Klärschlamm mittels hydrothermaler Karbonisierung und Säureauswaschung : Einfluss von Kohlendioxid-Eingasung auf den Prozess der Hydrothermalen Karbonisierung und der Vergleich verschiedener Nachweismethoden"
@@ -22,11 +22,11 @@ title: "Phosphorrückgewinnung aus kommunalem Klärschlamm mittels hydrothermale
  keywords: [{ name: "Klärschlamm" }, { name: "Mikrowellenaufschluss" }, { name: "Phosphorrückgewinnung" }, { name: "HTC" }, { name: "Photometrische Phosphorbestimmung" }, { name: "ICP-OES" }, { name: "Kohlendioxid-Eingasung" }, { name: "Schwermetalle" }, { name: " Technische Chemie" }]
  class: [{ id: "660" name: "Technische Chemie" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24433"
- sdgs: [{id: sdg_2}, {id: sdg_6}]
+ sdgs: [{id: "sdg_2"}, {id: "sdg_6"}]
  subtype: { name: "Thesis: Bachelor" }
  language: "de"
- category: { name: "Publication" }
- departments: [ {id: department_N} ] 
+ category: { name: "publications" }
+ departments: [ {id: "department_N"} ] 
 }, 
 {
 title: "Does exhaled aerosol increase with COVID-19 infection correlate with body mass index-years?"
@@ -36,11 +36,11 @@ title: "Does exhaled aerosol increase with COVID-19 infection correlate with bod
  keywords: [{ name: "Aerosol" }, { name: "Body Mass Index" }, { name: "Exhalation" }, { name: "Human" }, { name: "SARS-CoV-2" }, { name: "COVID-19" }, { name: " Physiologie und verwandte Themen" }]
  class: [{ id: "571" name: "Physiologie und verwandte Themen" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/23994"
- sdgs: [{id: sdg_14} ]
+ sdgs: [{id: "sdg_14"} ]
  subtype: { name: "Beitrag in wissenschaftlicher Zeitschrift" }
  language: "en"
- category: { name: "Publication" }
- departments: [{id: department_N}] 
+ category: { name: "publications" }
+ departments: [{id: "department_N"}] 
 }, 
 {
 title: "Xanthomonas hortorum – beyond gardens : current taxonomy, genomics, and virulence repertoires"
@@ -50,11 +50,11 @@ title: "Xanthomonas hortorum – beyond gardens : current taxonomy, genomics, an
  keywords: [{ name: "Bacterial blight" }, { name: "Carrot" }, { name: "Dandelion" }, { name: "Leaf spot" }, { name: "Lettuce" }, { name: "Pelargonium" }, { name: "Tomato" }, { name: "Xanthomonas hortorum" }, { name: " Biochemie" }, { name: " Mikrobiologie" }]
  class: [{ id: "572" name: "Biochemie" }, {id: "579" name: "Mikrobiologie" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24016"
- sdgs: [{id: sdg_12} , {id: sdg_2} ]
+ sdgs: [{id: "sdg_12"} , {id: "sdg_2"} ]
  subtype: { name: "Beitrag in wissenschaftlicher Zeitschrift" }
  language: "en"
- category: { name: "Publication" }
-  departments: [{id: department_N} ] 
+ category: { name: "publications" }
+  departments: [{id: "department_N"} ] 
 }, 
 {
 title: "Modelling the impact of climate change on agriculture productivity in Russia"
@@ -64,11 +64,11 @@ title: "Modelling the impact of climate change on agriculture productivity in Ru
  keywords: [{ name: "Russia" }, { name: "Ricardian approach" }, { name: "Climate change impact" }, { name: "Agriculture" }, { name: " Landwirtschaft" }]
  class: [{ id: "630" name: "Landwirtschaft" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24961"
- sdgs: [{id: sdg_13} , {id: sdg_15} , {id: sdg_2 }]
+ sdgs: [{id: "sdg_13"} , {id: "sdg_15"} , {id: "sdg_2" }]
  subtype: { name: "Konferenz: Paper" }
  language: "en"
- category: { name: "Publication" }
-  departments: [{id: department_N}] 
+ category: { name: "publications" }
+  departments: [{id: "department_N"}] 
 }, 
 {
 title: "Duales Dachbegrünungssystem : «Orchideenwiesen und Weinanbau übereinander» am Beispiel von Projekt KHK St. Gallen"
@@ -78,11 +78,11 @@ title: "Duales Dachbegrünungssystem : «Orchideenwiesen und Weinanbau übereina
  keywords: [{ name: "Roof top Farming" }, { name: "Nährstoffregulierung" }, { name: "Duales Dachbegrünungssystem" }, { name: "Magerwiesen" }, { name: "Orchideenwiese" }, { name: "Urbane Landwirtschaft" }, { name: "Wachstumsdepression" }, { name: "Zeigerwerte" }, { name: "Weinbau auf dem Dach" }, { name: " Landflächen, Naturerholungsgebiete" }]
  class: [{ id: "333.7" name: "Landflächen, Naturerholungsgebiete" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24438"
- sdgs: [{id: sdg_11}, {id: sdg_2}]
+ sdgs: [{id: "sdg_11"}, {id: "sdg_2"}]
  subtype: { name: "Thesis: Bachelor" }
  language: "de"
- category: { name: "Publication" }
-  departments: [{id: department_N}] 
+ category: { name: "publications" }
+  departments: [{id: "department_N"}] 
 }, 
 {
 title: "The strategic use of microlearning as a training approach for the purpose of workforce skills development in multinational corporations"
@@ -93,11 +93,11 @@ title: "The strategic use of microlearning as a training approach for the purpos
  keywords: []
  class: [{ id: "658.3" name: "Personalmanagement" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24663"
- sdgs: [{id: sdg_3}]
+ sdgs: [{id: "sdg_3"}]
  subtype: { name: "Thesis: Master" }
  language: "en"
- category: { name: "Publication" }
-  departments: [{id: department_W}] 
+ category: { name: "publications" }
+  departments: [{id: "department_W"}] 
 }, 
 {
 title: "Clarification of yeast cell suspensions by a highly porous polyamide nanofiber sponge"
@@ -108,11 +108,11 @@ title: "Clarification of yeast cell suspensions by a highly porous polyamide nan
  keywords: [{ name: "Yeast cell filtration" }, { name: "Nanofibrous polyamide sponge" }, { name: "Depth filtration" }, { name: "Pore blocking mechanism" }, { name: "3D nanofiber aerogel" }, { name: " Technische Chemie" }]
  class: [{ id: "660" name: "Technische Chemie" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/23848"
- sdgs: [{id: sdg_3}]
+ sdgs: [{id: "sdg_3"}]
  subtype: { name: "Beitrag in wissenschaftlicher Zeitschrift" }
  language: "en"
- category: { name: "Publication" }
-  departments: [{id: department_N}] 
+ category: { name: "publications" }
+  departments: [{id: "department_N"}] 
 }, 
 {
 title: "Supinationstrauma: Tape oder Stabilisationsschiene? : welches Hilfsmittel bringt während der Rehabilitation eines Supinationstraumas einen besseren Nutzen?"
@@ -123,11 +123,11 @@ title: "Supinationstrauma: Tape oder Stabilisationsschiene? : welches Hilfsmitte
  keywords: [{ name: "Akute Verstauchung des Sprunggelenkes" }, { name: "Unelastisches Heftpflaster" }, { name: "Stützschiene" }, { name: "Rehabilitation" }, { name: "Acute ankle sprain" }, { name: "Tape" }, { name: "Brace" }, { name: "Rehabilitation" }, { name: " Physiotherapie" }]
  class: [{ id: "615.82" name: "Physiotherapie" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24321"
- sdgs: [{id: sdg_3}]
+ sdgs: [{id: "sdg_3"}]
  subtype: { name: "Thesis: Bachelor" }
  language: "de"
- category: { name: "Publication" }
-  departments: [{id: department_G}] 
+ category: { name: "publications" }
+  departments: [{id: "department_G"}] 
 }, 
 {
 title: "Impact of RFI on GNSS and avionics : a view from the cockpit"
@@ -138,11 +138,11 @@ title: "Impact of RFI on GNSS and avionics : a view from the cockpit"
  keywords: [{ name: "GNSS interference" }, { name: "RFI" }, { name: "Jamming" }, { name: " Luftfahrt- und Fahrzeugtechnik" }]
  class: [{ id: "629" name: "Luftfahrt- und Fahrzeugtechnik" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24588"
- sdgs: [{id: sdg_3}]
+ sdgs: [{id: "sdg_3"}]
  subtype: { name: "Konferenz: Sonstiges" }
  language: "en"
- category: { name: "Publication" }
-  departments: [{id: department_T}] 
+ category: { name: "publications" }
+  departments: [{id: "department_T"}] 
 }, 
 {
 title: "Value of co-benefits from energy saving ventilation systems : contingent valuations on Swiss home owners"
@@ -153,11 +153,11 @@ title: "Value of co-benefits from energy saving ventilation systems : contingent
  keywords: [{ name: "Co-benefits of energy efficiency" }, { name: "Residential investment decision" }, { name: "Willingness to accept" }, { name: "Willingness to pay" }, { name: "Swiss home owner" }, { name: " Energie" }]
  class: [{ id: "333.79" name: "Energie" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24742"
- sdgs: [{id: sdg_11}, {id: sdg_7}]
+ sdgs: [{id: "sdg_11"}, {id: "sdg_7"}]
  subtype: { name: "Working Paper – Gutachten – Studie" }
  language: "en"
- category: { name: "Publication" }
-  departments: [{id: department_W}] 
+ category: { name: "publications" }
+  departments: [{id: "department_W"}] 
 }, 
 {
 title: "What is the relapse risk during treatment? : survivor analysis of single and multiple relapse events in inpatients with alcohol use disorder as part of an observational study"
@@ -168,11 +168,11 @@ title: "What is the relapse risk during treatment? : survivor analysis of single
  keywords: [{ name: "Alcohol use disorder" }, { name: "Relapse" }, { name: "Survival analysis" }, { name: "Treatment" }, { name: " Neurologie und Krankheiten des Nervensystems" }]
  class: [{ id: "616.8" name: "Neurologie und Krankheiten des Nervensystems" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24727"
- sdgs: [{id: sdg_3}]
+ sdgs: [{id: "sdg_3"}]
  subtype: { name: "Beitrag in wissenschaftlicher Zeitschrift" }
  language: "en"
- category: { name: "Publication" }
-  departments: [{id: department_G}] 
+ category: { name: "publications" }
+  departments: [{id: "department_G"}] 
 }, 
 {
 title: "Moderater Alkoholkonsum während Schwangerschaft und Stillzeit"
@@ -183,11 +183,11 @@ title: "Moderater Alkoholkonsum während Schwangerschaft und Stillzeit"
  keywords: [{ name: "Alkoholkonsum" }, { name: "Schwangerschaft" }, { name: "Stillzeit" }, { name: "Risikowahrnehmung" }]
  class: [{ id: "618" name: "Geburtsmedizin und Hebammenarbeit" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/23869"
- sdgs: [{id: sdg_3}]
+ sdgs: [{id: "sdg_3"}]
  subtype: { name: "Konferenz: Sonstiges" }
  language: "de"
- category: { name: "Publication" }
-  departments: [{id: department_G}] 
+ category: { name: "publications" }
+  departments: [{id: "department_G"}] 
 }, 
 {
 title: "Change in alcohol consumption and binge drinking in university students during the early COVID-19 pandemic"
@@ -198,11 +198,11 @@ title: "Change in alcohol consumption and binge drinking in university students 
  keywords: [{ name: "Pandemie" }, { name: "Gesundheitsverhalten" }, { name: "Alkoholkonsum" }, { name: "Studierendengesundheit" }, { name: "Risky health behavior" }, { name: "Alcohol" }, { name: "Binge drinking" }, { name: "Anxiety" }, { name: "Student" }, { name: "Emerging adulthood" }, { name: "COVID-19" }, { name: "Lockdown" }]
  class: [{ id: "305" name: "Personengruppen (Alter, Herkunft, Geschlecht, Einkommen)" }, { id: "616.8" name: "Neurologie und Krankheiten des Nervensystems" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24898"
- sdgs: [{id: sdg_3}]
+ sdgs: [{id: "sdg_3"}]
  subtype: { name: "Beitrag in wissenschaftlicher Zeitschrift" }
  language: "en"
- category: { name: "Publication" }
- departments: [ {id: department_G}, {id:  department_P} ] 
+ category: { name: "publications" }
+ departments: [ {id: "department_G"}, {id:  "department_P"} ] 
 }, 
 {
 title: "Inflationserwartungen und parteipolitische Überzeugungen : empirische Evidenz aus den Vereinigten Staaten von Amerika"
@@ -213,11 +213,11 @@ title: "Inflationserwartungen und parteipolitische Überzeugungen : empirische E
  keywords: []
  class: [{ id: "320" name: "Politik" }, { id: "332" name: "Finanzwirtschaft" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/25040"
- sdgs: [{id: sdg_16}, {id: sdg_8}]
+ sdgs: [{id: "sdg_16"}, {id: "sdg_8"}]
  subtype: { name: "Beitrag in wissenschaftlicher Zeitschrift" }
  language: "de"
- category: { name: "Publication" }
-  departments: [{id: department_W}] 
+ category: { name: "publications" }
+  departments: [{id: "department_W"}] 
 }, 
 {
 title: "Umkleidezeit – aktueller Stand : rechtliche Qualifikation und Rechtsfolgen"
@@ -228,11 +228,11 @@ title: "Umkleidezeit – aktueller Stand : rechtliche Qualifikation und Rechtsfo
  keywords: []
  class: [{ id: "344" name: "Öffentliches Recht (CH), Arbeits-, Sozial-, Bildungs- und Kulturrecht" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24075"
- sdgs: [{id: sdg_8}]
+ sdgs: [{id: "sdg_8"}]
  subtype: { name: "Beitrag in Magazin oder Zeitung" }
  language: "de"
- category: { name: "Publication" }
-  departments: [{id: department_W}] 
+ category: { name: "publications" }
+  departments: [{id: "department_W"}] 
 }, 
 {
 title: "Waldbaden und Waldtherapie als innovative Ansätze mit gesundheitsförderndem Potenzial"
@@ -243,11 +243,11 @@ title: "Waldbaden und Waldtherapie als innovative Ansätze mit gesundheitsförde
  keywords: [{ name: "Forest therapy" }, { name: "Health" }, { name: "Mindfulness" }, { name: "Distress" }, { name: "Forest medicine" }, { name: "Shinrin yoku" }, { name: "Cortisol" }, { name: "Forest bathing" }]
  class: [{ id: "615" name: "Pharmakologie und Therapeutik" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/23944"
- sdgs: [{id: sdg_14}, {id: sdg_15}]
+ sdgs: [{id: "sdg_14"}, {id: "sdg_15"}]
  subtype: { name: "Beitrag in wissenschaftlicher Zeitschrift" }
  language: "de"
- category: { name: "Publication" }
-  departments: [{id: department_N}] 
+ category: { name: "publications" }
+  departments: [{id: "department_N"}] 
 }, 
 {
 title: "Suffizienz in der Ernährung : Entwicklung und Durchführung eines Workshops zur Förderung suffizienter Ernährungsweisen"
@@ -258,11 +258,11 @@ title: "Suffizienz in der Ernährung : Entwicklung und Durchführung eines Works
  keywords: [{ name: "Suffizienz" }, { name: "Bildung für nachhaltige Entwicklung" }, { name: "Suffiziente Ernährung" }, { name: "Ernährungssystem" }, { name: "Kompetenzorientierung" }, { name: "Workshop" }, { name: "informelle Erwachsenenbildung" }, { name: "Ernährung" }, { name: "Nachhaltige Entwicklung" }, { name: "Bildung" }]
  class: [{ id: "333" name: "Bodenwirtschaft und Ressourcen" }, { id: "613.2" name: "Diätetik" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24443"
- sdgs: [{id: sdg_2}, {id: sdg_4}]
+ sdgs: [{id: "sdg_2"}, {id: "sdg_4"}]
  subtype: { name: "Thesis: Bachelor" }
  language: "de"
- category: { name: "Publication" }
-  departments: [{id: department_G}] 
+ category: { name: "publications" }
+  departments: [{id: "department_G"}] 
 }, 
 {
 title: "Indicators for urban circular bioeconomy development : a systematic review of EU-wide national bioeconomy monitoring frameworks and their utility to urban policy-makers"
@@ -273,11 +273,11 @@ title: "Indicators for urban circular bioeconomy development : a systematic revi
  keywords: []
  class: [{ id: "338.927" name: "Umweltökonomie und nachhaltige Entwicklung" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24678"
- sdgs: [{id: sdg_11}, {id: sdg_15}]
+ sdgs: [{id: "sdg_11"}, {id: "sdg_15"}]
  subtype: { name: "Thesis: Master" }
  language: "en"
- category: { name: "Publication" }
-  departments: [{id: department_N}] 
+ category: { name: "publications" }
+  departments: [{id: "department_N"}] 
 }
 ], upsert: true) {
     infoObject {

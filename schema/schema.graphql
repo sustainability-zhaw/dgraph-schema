@@ -1,43 +1,11 @@
-enum eDepartment {
-    department_A
-    department_G
-    department_L
-    department_N
-    department_P
-    department_S
-    department_T
-    department_W
-    department_R
-    department_V
-}
-
-enum eSdg {
-    sdg_1
-    sdg_2
-    sdg_3
-    sdg_4
-    sdg_5
-    sdg_6
-    sdg_7
-    sdg_8
-    sdg_9
-    sdg_10
-    sdg_11
-    sdg_12
-    sdg_13
-    sdg_14
-    sdg_15
-    sdg_16
-    sdg_17
-}
 
 type Sdg {
-    id: eSdg @search
+    id: String! @id @search(by: [exact])
     objects: [InfoObject] @hasInverse(field: sdgs) 
 }
 
 type Department {
-    id: eDepartment @search
+    id: String! @id @search(by: [exact])
     objects: [InfoObject] @hasInverse(field: departments) 
     persons: [Person] @hasInverse(field: department)
 }

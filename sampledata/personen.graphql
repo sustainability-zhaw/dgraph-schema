@@ -9,7 +9,7 @@ fullname: "Meyer, Luca"
 {
 fullname: "Stohner, Jürgen",
             initials: "sthj",
-            department:  {id: department_N}
+            department:  {id: "department_N"}
 },
 {
 fullname: "Dia, Nay C."
@@ -38,22 +38,22 @@ fullname: "Potnis, Neha"
 {
 fullname: "Pothier, Joël F.",
             initials: "poth",
-            department: {id: department_N}
+            department: {id: "department_N"}
 },
 {
 fullname: "Bokusheva, Raushan",
             initials: "boku",
-            department: {id: department_N}
+            department: {id: "department_N"}
 },
 {
 fullname: "Bozzola, Martina",
             initials: "bozz",
-            department: {id: department_N}
+            department: {id: "department_N"}
 },
 {
 fullname: "Kunze, Sven",
             initials: "kunv",
-            department: {id: department_N}
+            department: {id: "department_N"}
 },
 {
 fullname: "Tribelhorn, Roman"
@@ -70,7 +70,7 @@ fullname: "Filipová, Lucie"
 {
 fullname: "Ebert, Jürgen",
             initials: "ebju",
-            department: {id: department_N}
+            department: {id: "department_N"}
 },
 {
 fullname: "Heiligtag, Florian Johannes"
@@ -90,7 +90,7 @@ fullname: "Frank, Brian"
 {
 fullname: "Adlhart, Christian",
             initials: "adas",
-            department: {id: department_N}
+            department: {id: "department_N"}
 },
 {
 fullname: "Baumann, Mirja"
@@ -104,7 +104,7 @@ fullname: "Osechas, Okuary"
 {
 fullname: "Felux, Michael",
             initials: "felu",
-            department: {id: department_T}
+            department: {id: "department_T"}
 },
 {
 fullname: "Fohlmeister, Friederike"
@@ -115,7 +115,7 @@ fullname: "Dautermann, Thomas"
 {
 fullname: "Boogen, Nina",
             initials: "boog",
-            department: {id: department_W}
+            department: {id: "department_W"}
 },
 {
 fullname: "Filippini, Massimo"
@@ -138,12 +138,12 @@ fullname: "Wieber, Frank"
 {
 fullname: "Pehlke-Milde, Jessica",
             initials: "pehl",
-            department: {id: department_G}
+            department: {id: "department_G"}
 },
 {
 fullname: "Radu, Irina",
             initials: "radu",
-            department: {id: department_G}
+            department: {id: "department_G"}
 },
 {
 fullname: "Meyer, Yvonne"
@@ -157,7 +157,7 @@ fullname: "Hammer, Raphaël"
 {
 fullname: "Zysset, Annina",
             initials: "zyss",
-            department: {id: department_G}
+            department: {id: "department_G"}
 },
 {
 fullname: "Amendola, Simone"
@@ -165,17 +165,17 @@ fullname: "Amendola, Simone"
 {
 fullname: "von Wyl, Agnes",
             initials: "vonw",
-            department: {id: department_P}
+            department: {id: "department_P"}
 },
 {
 fullname: "Dratva, Julia",
             initials: "drat",
-            department: {id: department_G}
+            department: {id: "department_G"}
 },
 {
 fullname: "Bachmann, Oliver",
             initials: "bacl",
-            department: {id: department_W}
+            department: {id: "department_W"}
 },
 {
 fullname: "Gründler, Klaus"
@@ -189,17 +189,17 @@ fullname: "Potrafke, Niklas"
 {
 fullname: "Seiberlich, Ruben",
             initials: "seib",
-            department: {id: department_W}
+            department: {id: "department_W"}
 },
 {
 fullname: "Petrik, Andreas",
             initials: "pean",
-            department: {id: department_W}
+            department: {id: "department_W"}
 },
 {
 fullname: "Föhn, Martina",
             initials: "fhia",
-            department: {id: department_N}
+            department: {id: "department_N"}
 },
 {
 fullname: "Nydegger, Vera"
