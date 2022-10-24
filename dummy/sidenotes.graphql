@@ -1,7 +1,7 @@
 {
-  queryInfoObject (
+  object: queryInfoObject (
     order: {
-      asc:
+      desc:
         year,
       then: {
         asc:
@@ -10,11 +10,6 @@
     },
     first:
       20
-  ) @cascade(
-    fields: [
-      "sdgs",
-      "departments"
-    ]
   ) {
     title
     abstract
@@ -40,6 +35,10 @@
       sdgs {
       id
     }
+    dept:
+      departments {
+      id
+    }
     persons (
       filter: {
         has: [
@@ -59,28 +58,6 @@
       team {
         name
       }
-    }
-    sdgs (
-      filter: {
-        id: {
-          in: [
-            sdg_3
-          ]
-        }
-      }
-    ) {
-      id
-    }
-    departments (
-      filter: {
-        id: {
-          in: [
-            department_G
-          ]
-        }
-      }
-    ) {
-      id
     }
   }
 }
