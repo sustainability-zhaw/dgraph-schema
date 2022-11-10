@@ -24,6 +24,7 @@ type InfoObject @withSubscription {
     subtype: InfoObjectType 
     category: InfoObjectType
     departments: [Department]
+    dateUpdate: DateTime
 }
 
 type Person @withSubscription {
@@ -43,6 +44,7 @@ type Person @withSubscription {
     department: Department
     objects: [ InfoObject ] @hasInverse(field: persons)
     LDAPDN: String @search(by: [exact])
+    dateUpdate: DateTime
 }
 
 type Team {
