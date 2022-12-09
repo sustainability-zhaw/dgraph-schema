@@ -1,211 +1,130 @@
 mutation {
     addPerson(input:[
-        {
-fullname: "Karakas, Esra"
+{
+    fullname: "Stohner, Jürgen",
+    initials: "sthj",
+    department:  {id: "department_N"},
+    LDAPDN: "cn=sthj",
+    synonyms: [{fullname: "Stohner, Jürgen"}]
 },
 {
-fullname: "Meyer, Luca"
+    fullname: "Pothier, Joël F.",
+    initials: "poth",
+    department: {id: "department_N"},
+    LDAPDN: "cn=poth",
+    synonyms: [{fullname: "Pothier, Joël F."}]
 },
 {
-fullname: "Stohner, Jürgen",
-            initials: "sthj",
-            department:  {id: "department_N"}
+    fullname: "Bokusheva, Raushan",
+    initials: "boku",
+    department: {id: "department_N"},
+    LDAPDN: "cn=boku",
+    synonyms: [{fullname: "Bokusheva, Raushan"}]
 },
 {
-fullname: "Dia, Nay C."
+    fullname: "Bozzola, Martina",
+    initials: "bozz",
+    department: {id: "department_N"},
+    LDAPDN: "cn=bozz",
+    synonyms: [{fullname: "Bozzola, Martina"}]
 },
 {
-fullname: "Morinière, Lucas"
+    fullname: "Kunze, Sven",
+    initials: "kunv",
+    department: {id: "department_N"},
+    LDAPDN: "cn=kunv",
+    synonyms: [{fullname: "Kunze, Sven"}]
 },
 {
-fullname: "Cottyn, Bart"
+    fullname: "Ebert, Jürgen",
+    initials: "ebju",
+    department: {id: "department_N"},
+    LDAPDN: "cn=ebju",
+    synonyms: [{fullname: "Ebert, Jürgen"}]
 },
 {
-fullname: "Bernal, Eduardo"
+    fullname: "Adlhart, Christian",
+    initials: "adas",
+    department: {id: "department_N"},
+    LDAPDN: "cn=adas",
+    synonyms: [{fullname: "Adlhart, Christian"}]
 },
 {
-fullname: "Jacobs, Jonathan M."
+    fullname: "Felux, Michael",
+    initials: "felu",
+    department: {id: "department_T"},
+    LDAPDN: "cn=felu",
+    synonyms: [{fullname: "Felux, Michael"}]
 },
 {
-fullname: "Koebnik, Ralf"
+    fullname: "Boogen, Nina",
+    initials: "boog",
+    department: {id: "department_W"},
+    LDAPDN: "cn=boog",
+    synonyms: [{fullname: "Boogen, Nina"}]
 },
 {
-fullname: "Osdaghi, Ebrahim"
+    fullname: "Pehlke-Milde, Jessica",
+    initials: "pehl",
+    department: {id: "department_G"},
+    LDAPDN: "cn=pehl",
+    synonyms: [{fullname: "Pehlke-Milde, Jessica"}]
 },
 {
-fullname: "Potnis, Neha"
+    fullname: "Radu, Irina",
+    initials: "radu",
+    department: {id: "department_G"},
+    LDAPDN: "cn=radu",
+    synonyms: [{fullname: "Radu, Irina"}]
 },
 {
-fullname: "Pothier, Joël F.",
-            initials: "poth",
-            department: {id: "department_N"}
+    fullname: "Zysset, Annina",
+    initials: "zyss",
+    department: {id: "department_G"},
+    LDAPDN: "cn=zyss",
+    synonyms: [{fullname: "Zysset, Annina"}]
 },
 {
-fullname: "Bokusheva, Raushan",
-            initials: "boku",
-            department: {id: "department_N"}
+    fullname: "von Wyl, Agnes",
+    initials: "vonw",
+    department: {id: "department_P"},
+    LDAPDN: "cn=vonw",
+    synonyms: [{fullname: "von Wyl, Agnes"}]
 },
 {
-fullname: "Bozzola, Martina",
-            initials: "bozz",
-            department: {id: "department_N"}
+    fullname: "Dratva, Julia",
+    initials: "drat",
+    department: {id: "department_G"},
+    LDAPDN: "cn=drat",
+    synonyms: [{fullname: "Dratva, Julia"}]
 },
 {
-fullname: "Kunze, Sven",
-            initials: "kunv",
-            department: {id: "department_N"}
+    fullname: "Bachmann, Oliver",
+    initials: "bacl",
+    department: {id: "department_W"},
+    LDAPDN: "cn=bacl",
+    synonyms: [{fullname: "Bachmann, Oliver"}]
 },
 {
-fullname: "Tribelhorn, Roman"
+    fullname: "Seiberlich, Ruben",
+    initials: "seib",
+    department: {id: "department_W"},
+    LDAPDN: "cn=seib",
+    synonyms: [{fullname: "Seiberlich, Ruben"}]
 },
 {
-fullname: "Loh Joey, Krystal"
+    fullname: "Petrik, Andreas",
+    initials: "pean",
+    department: {id: "department_W"},
+    LDAPDN: "cn=pean",
+    synonyms: [{fullname: "Petrik, Andreas"}]
 },
 {
-fullname: "Mousavi, Sara"
-},
-{
-fullname: "Filipová, Lucie"
-},
-{
-fullname: "Ebert, Jürgen",
-            initials: "ebju",
-            department: {id: "department_N"}
-},
-{
-fullname: "Heiligtag, Florian Johannes"
-},
-{
-fullname: "Daumke, Ralph"
-},
-{
-fullname: "Loser, Werner"
-},
-{
-fullname: "Ledergerber, Bettina"
-},
-{
-fullname: "Frank, Brian"
-},
-{
-fullname: "Adlhart, Christian",
-            initials: "adas",
-            department: {id: "department_N"}
-},
-{
-fullname: "Baumann, Mirja"
-},
-{
-fullname: "Brander, Sarah"
-},
-{
-fullname: "Osechas, Okuary"
-},
-{
-fullname: "Felux, Michael",
-            initials: "felu",
-            department: {id: "department_T"}
-},
-{
-fullname: "Fohlmeister, Friederike"
-},
-{
-fullname: "Dautermann, Thomas"
-},
-{
-fullname: "Boogen, Nina",
-            initials: "boog",
-            department: {id: "department_W"}
-},
-{
-fullname: "Filippini, Massimo"
-},
-{
-fullname: "Martinez-Cruz, Adan L."
-},
-{
-fullname: "Senn, Smeralda"
-},
-{
-fullname: "Volken, Thomas"
-},
-{
-fullname: "Rösner, Susanne"
-},
-{
-fullname: "Wieber, Frank"
-},
-{
-fullname: "Pehlke-Milde, Jessica",
-            initials: "pehl",
-            department: {id: "department_G"}
-},
-{
-fullname: "Radu, Irina",
-            initials: "radu",
-            department: {id: "department_G"}
-},
-{
-fullname: "Meyer, Yvonne"
-},
-{
-fullname: "Gouilhers, Solène"
-},
-{
-fullname: "Hammer, Raphaël"
-},
-{
-fullname: "Zysset, Annina",
-            initials: "zyss",
-            department: {id: "department_G"}
-},
-{
-fullname: "Amendola, Simone"
-},
-{
-fullname: "von Wyl, Agnes",
-            initials: "vonw",
-            department: {id: "department_P"}
-},
-{
-fullname: "Dratva, Julia",
-            initials: "drat",
-            department: {id: "department_G"}
-},
-{
-fullname: "Bachmann, Oliver",
-            initials: "bacl",
-            department: {id: "department_W"}
-},
-{
-fullname: "Gründler, Klaus"
-},
-{
-fullname: "Morales, Jonas"
-},
-{
-fullname: "Potrafke, Niklas"
-},
-{
-fullname: "Seiberlich, Ruben",
-            initials: "seib",
-            department: {id: "department_W"}
-},
-{
-fullname: "Petrik, Andreas",
-            initials: "pean",
-            department: {id: "department_W"}
-},
-{
-fullname: "Föhn, Martina",
-            initials: "fhia",
-            department: {id: "department_N"}
-},
-{
-fullname: "Nydegger, Vera"
-},
-{
-fullname: "Marcone, Roberto Davide"
+    fullname: "Föhn, Martina",
+    initials: "fhia",
+    department: {id: "department_N"},
+    LDAPDN: "cn=fhia",
+    synonyms: [{fullname: "Föhn, Martina"}]
 }
      ]){
         person {
@@ -216,4 +135,5 @@ fullname: "Marcone, Roberto Davide"
             }
         }
     }
+
 }

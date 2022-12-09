@@ -10,27 +10,42 @@ To install or update a schema:
 curl -X POST http://localhost:8080/admin/schema --data-binary '@schema/dgraph_schema.graphql'
 ```
 
+When installing a fresh schema, the constants are also important
+
+```
+curl -s -X POST http://localhost:8080/graphql -H 'Content-Type: application/graphql' --data-binary '@schema/constants.graphql'
+```
 
 Insert data works as follows: 
 
+This will insert a working dataset for the UI. 
+
 ```
-curl -X POST http://localhost:8080/graphql -H 'Content-Type: application/graphql' --data-binary '@try/insertPublications.graphql'
+curl -X POST http://localhost:8080/graphql -H 'Content-Type: application/graphql' --data-binary '@sampledata/people.graphql'
+
+curl -X POST http://localhost:8080/graphql -H 'Content-Type: application/graphql' --data-binary '@sampledata/pubs.graphql'
+```
+
+To test the process, the following call inserts just scraping data and leave persons empty. This is useful to test the LDAP lookup process.
+
+```
+curl -X POST http://localhost:8080/graphql -H 'Content-Type: application/graphql' --data-binary '@sampledata/pubs.graphql'
 ```
 
 Get data: 
 
 ```
-curl -X POST http://localhost:8080/graphql -H 'Content-Type: application/graphql' --data-binary '@try/getusers.graphql'
+curl -X POST http://localhost:8080/graphql -H 'Content-Type: application/graphql' --data-binary '@dummy/getusers.graphql'
 ```
 
-reset the entire database 
+Reset the entire database - including the schema: 
 
 ```
 curl -X POST localhost:8080/alter -d '{"drop_op": "DATA"}'
 ```
 
 
-Deleting Data: 
+Deleting individual Data: 
 
 ```
 mutation {
