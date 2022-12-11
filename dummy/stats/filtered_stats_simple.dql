@@ -1,0 +1,44 @@
+# This is the root query to fetch all proper counts
+{   
+    ot1 as var(func: allofterms(InfoObjectType.name, "publications")) {
+        InfoObjectType.name
+    }
+
+    sdg_pub(func: has(Sdg.objects)) {
+        id: Sdg.id
+        n: count(Sdg.objects @filter(uid_in(InfoObject.category, uid(ot1))))
+    }
+
+    dept_pub(func: has(Department.objects)) {
+        Department.id
+        n: count(Department.objects @filter(uid_in(InfoObject.category, uid(ot1))))
+    }
+
+    ot2 as var(func: allofterms(InfoObjectType.name, "modules")) {
+        InfoObjectType.name
+    }
+
+    sdg_mod(func: has(Sdg.objects)) {
+        id: Sdg.id
+        n: count(Sdg.objects @filter(uid_in(InfoObject.category, uid(ot2))))
+    }
+
+    dept_mod(func: has(Department.objects)) {
+        Department.id
+        n: count(Department.objects @filter(uid_in(InfoObject.category, uid(ot2))))
+    }
+
+    ot3 as var(func: allofterms(InfoObjectType.name, "projects")) {
+        InfoObjectType.name
+    }
+
+    sdg_prj(func: has(Sdg.objects)) {
+        id: Sdg.id
+        n: count(Sdg.objects @filter(uid_in(InfoObject.category, uid(ot3))))
+    }
+
+    dept_prj(func: has(Department.objects)) {
+        Department.id
+        n: count(Department.objects @filter(uid_in(InfoObject.category, uid(ot3))))
+    }
+}
