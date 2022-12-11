@@ -21,7 +21,8 @@ type InfoObject @withSubscription {
     sdgs: [ Sdg ] 
     keywords: [ Keyword ]
     class: [ PublicationClass ]
-    category: [ InfoObjectType ]
+    category: InfoObjectType
+    subtype: InfoObjectSubType 
     departments: [Department]
     dateUpdate: DateTime
 }
@@ -62,7 +63,11 @@ type Author @withSubscription {
 type InfoObjectType { 
     name: String! @id @search(by: [term])
     objects: [ InfoObject ] @hasInverse(field: category)
-    
+}
+
+type InfoObjectSubType { 
+    name: String! @id @search(by: [term])
+    objects: [ InfoObject ] @hasInverse(field: subtype)
 }
 
 type PublicationClass { 
