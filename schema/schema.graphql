@@ -21,8 +21,7 @@ type InfoObject @withSubscription {
     sdgs: [ Sdg ] 
     keywords: [ Keyword ]
     class: [ PublicationClass ]
-    subtype: InfoObjectType 
-    category: InfoObjectType
+    category: [ InfoObjectType ]
     departments: [Department]
     dateUpdate: DateTime
 }
@@ -48,9 +47,9 @@ type Person {
     ad_check: Int @search 
 }
 
-type Author {
-    fullname: String! @id @search(by: [term]) 
-    person: Person @hasInverse(field: synonyms)
+type Team {
+    LDAPDN: String! @id @search(by: [term]) 
+    person: [Person] @hasInverse(field: team)
     ad_check: Int @search
 }
 
@@ -61,8 +60,9 @@ type Author @withSubscription {
 }
 
 type InfoObjectType { 
-    name: String! @id @search(by: [exact])
-    objects: [ InfoObject ] @hasInverse(field: subtype)
+    name: String! @id @search(by: [term])
+    objects: [ InfoObject ] @hasInverse(field: category)
+    
 }
 
 type PublicationClass { 

@@ -8,10 +8,9 @@ title: "Lebensdauerverlängerung von Mobiltelefonen : der Entscheidungsprozess b
  keywords: [{ name: "Bodenwirtschaft und Ressourcen" }, { name: "Elektro-, Kommunikations-, Steuerungs- und Regelungstechnik" }]
  class: [{ id: "333" name: "Bodenwirtschaft und Ressourcen" }, { id: "621.3" name: "Elektro-, Kommunikations-, Steuerungs- und Regelungstechnik" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24361"
- sdgs: [{id: "sdg_12"} , {id: "sdg_7"} ]
- subtype: { name: "Thesis: Bachelor" }
+ sdgs: [{id: "sdg_12"} , {id: "sdg_7"} ] 
  language: "de"
- category: { name: "publications" }
+ category: [{ name: "publications" }, { name: "Thesis: Bachelor" }]
  departments: [ {id: "department_N"}] 
 }, 
 {
@@ -23,54 +22,47 @@ title: "Phosphorrückgewinnung aus kommunalem Klärschlamm mittels hydrothermale
  class: [{ id: "660" name: "Technische Chemie" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24433"
  sdgs: [{id: "sdg_2"}, {id: "sdg_6"}]
- subtype: { name: "Thesis: Bachelor" }
  language: "de"
- category: { name: "publications" }
+ category: [{ name: "publications" }, { name: "Thesis: Bachelor" }]
  departments: [ {id: "department_N"} ] 
 }, 
 {
 title: "Does exhaled aerosol increase with COVID-19 infection correlate with body mass index-years?"
  authors: [{ fullname: "Stohner, Jürgen" }]
-
  abstract: ""
  year: 2021
  keywords: [{ name: "Aerosol" }, { name: "Body Mass Index" }, { name: "Exhalation" }, { name: "Human" }, { name: "SARS-CoV-2" }, { name: "COVID-19" }, { name: " Physiologie und verwandte Themen" }]
  class: [{ id: "571" name: "Physiologie und verwandte Themen" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/23994"
  sdgs: [{id: "sdg_14"} ]
- subtype: { name: "Beitrag in wissenschaftlicher Zeitschrift" }
  language: "en"
- category: { name: "publications" }
+ category: [{ name: "publications" }, { name: "Beitrag in wissenschaftlicher Zeitschrift" }]
  departments: [{id: "department_N"}] 
 }, 
 {
 title: "Xanthomonas hortorum – beyond gardens : current taxonomy, genomics, and virulence repertoires"
  authors: [{ fullname: "Dia, Nay C." }, { fullname: "Morinière, Lucas" }, { fullname: "Cottyn, Bart" }, { fullname: "Bernal, Eduardo" }, { fullname: "Jacobs, Jonathan M." }, { fullname: "Koebnik, Ralf" }, { fullname: "Osdaghi, Ebrahim" }, { fullname: "Potnis, Neha" }, { fullname: "Pothier, Joël F." }]
-
  abstract: "Taxonomy: Bacteria; Phylum Proteobacteria; Class Gammaproteobacteria; Order Lysobacterales (earlier synonym of Xanthomonadales); Family Lysobacteraceae (earlier synonym of Xanthomonadaceae); Genus Xanthomonas; Species X. hortorum; Pathovars: pv. carotae, pv. vitians, pv. hederae, pv. pelargonii, pv. taraxaci, pv. cynarae, and pv. gardneri.\n\nHost range: Xanthomonas hortorum affects agricultural crops, and horticultural and wild plants. Tomato, carrot, artichoke, lettuce, pelargonium, ivy, and dandelion were originally described as the main natural hosts of the seven separate pathovars. Artificial inoculation experiments also revealed other hosts. The natural and experimental host ranges are expected to be broader than initially assumed. Additionally, several strains, yet to be assigned to a pathovar within X. hortorum, cause diseases on several other plant species such as peony, sweet wormwood, lavender, and oak-leaf hydrangea.\n\nEpidemiology and control: X. hortorum pathovars are mainly disseminated by infected seeds (e.g., X. hortorum pvs carotae and vitians) or cuttings (e.g., X. hortorum pv. pelargonii) and can be further dispersed by wind and rain, or mechanically transferred during planting and cultivation. Global trade of plants, seeds, and other propagating material constitutes a major pathway for their introduction and spread into new geographical areas. The propagules of some pathovars (e.g., X. horturum pv. pelargonii) are spread by insect vectors, while those of others can survive in crop residues and soils, and overwinter until the following growing season (e.g., X. hortorum pvs vitians and carotae). Control measures against X. hortorum pathovars are varied and include exclusion strategies (i.e., by using certification programmes and quarantine regulations) to multiple agricultural practices such as the application of phytosanitary products. Copper-based compounds against X. hortorum are used, but the emergence of copper-tolerant strains represents a major threat for their effective management. With the current lack of efficient chemical or biological disease management strategies, host resistance appears promising, but is not without challenges. The intrastrain genetic variability within the same pathovar poses a challenge for breeding cultivars with durable resistance.\n\nUseful websites: https://gd.eppo.int/taxon/XANTGA, https://gd.eppo.int/taxon/XANTCR, https://gd.eppo.int/taxon/XANTPE, https://www.euroxanth.eu, http://www.xanthomonas.org, http://www.xanthomonas.org/dokuwiki"
  year: 2022
  keywords: [{ name: "Bacterial blight" }, { name: "Carrot" }, { name: "Dandelion" }, { name: "Leaf spot" }, { name: "Lettuce" }, { name: "Pelargonium" }, { name: "Tomato" }, { name: "Xanthomonas hortorum" }, { name: " Biochemie" }, { name: " Mikrobiologie" }]
  class: [{ id: "572" name: "Biochemie" }, {id: "579" name: "Mikrobiologie" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24016"
  sdgs: [{id: "sdg_12"} , {id: "sdg_2"} ]
- subtype: { name: "Beitrag in wissenschaftlicher Zeitschrift" }
  language: "en"
- category: { name: "publications" }
+ category: [{ name: "publications" }, { name: "Beitrag in wissenschaftlicher Zeitschrift" }]
   departments: [{id: "department_N"} ] 
 }, 
 {
 title: "Modelling the impact of climate change on agriculture productivity in Russia"
  authors: [{ fullname: "Bokusheva, Raushan" }, { fullname: "Bozzola, Martina" }, { fullname: "Kunze, Sven" }]
- 
  abstract: "Understanding mechanisms of the impacts of global warming on agriculture in main agricultural production regions of the world is important for identifying appropriate adaptation strategies and for ensuring food security of the planet’s growing population. In our study, we study the impact of climate change on agriculture productivity in Russia – a major grain producing and exporting country. To derive marginal effects of climate change on agriculture productivity in 65 Russian regions, we employ an approach that build upon both the standard Ricardian approach (Mendelson et al., 1994) as well as the identification strategy allowing to control for adaptation efforts and unobserved heterogeneity proposed by Gammans, Mérel and Paroissien (2020). Our preliminary results suggest that a uniform increase in temperature during the main growing period will negatively affect agricultural production in all important production regions of Russia, given the current state of technological upgrading and land use in Russian agriculture."
  year: 2022
  keywords: [{ name: "Russia" }, { name: "Ricardian approach" }, { name: "Climate change impact" }, { name: "Agriculture" }, { name: " Landwirtschaft" }]
  class: [{ id: "630" name: "Landwirtschaft" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24961"
  sdgs: [{id: "sdg_13"} , {id: "sdg_15"} , {id: "sdg_2" }]
- subtype: { name: "Konferenz: Paper" }
  language: "en"
- category: { name: "publications" }
+ category: [{ name: "publications" },{ name: "Konferenz: Paper" }]
   departments: [{id: "department_N"}] 
 }, 
 {
@@ -82,9 +74,8 @@ title: "Duales Dachbegrünungssystem : «Orchideenwiesen und Weinanbau übereina
  class: [{ id: "333.7" name: "Landflächen, Naturerholungsgebiete" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24438"
  sdgs: [{id: "sdg_11"}, {id: "sdg_2"}]
- subtype: { name: "Thesis: Bachelor" }
  language: "de"
- category: { name: "publications" }
+ category: [{ name: "publications" }, {name: "Thesis: Bachelor" }]
   departments: [{id: "department_N"}] 
 }, 
 {
@@ -97,24 +88,21 @@ title: "The strategic use of microlearning as a training approach for the purpos
  class: [{ id: "658.3" name: "Personalmanagement" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24663"
  sdgs: [{id: "sdg_3"}]
- subtype: { name: "Thesis: Master" }
  language: "en"
- category: { name: "publications" }
+ category: [{ name: "publications" }, { name: "Thesis: Master" }]
   departments: [{id: "department_W"}] 
 }, 
 {
 title: "Clarification of yeast cell suspensions by a highly porous polyamide nanofiber sponge"
  authors: [{ fullname: "Mousavi, Sara" }, { fullname: "Filipová, Lucie" }, { fullname: "Ebert, Jürgen" }, { fullname: "Heiligtag, Florian Johannes" }, { fullname: "Daumke, Ralph" }, { fullname: "Loser, Werner" }, { fullname: "Ledergerber, Bettina" }, { fullname: "Frank, Brian" }, { fullname: "Adlhart, Christian" }]
- 
  abstract: "Depth filtration is an attractive method for initial clarification of broth for removing cells and cell debris. Electrospun nanofibers with their large specific surface area and a porous structure are known as attractive materials in filtration processes. However, dead-end filtration of cells through nanofiber mats (NFM) always leads to cake formation and increasing resistance. In this study, for the first time, a nanofiber sponge (NFS) or nanofiber aerogel was synthetized from polyamide 6 (PA6) building blocks. The NFS was flexible, highly porous and mechanically stable. The pore size of the NFS was tuned between 8 and 26 µm during the cryogenic processing step. Volumetric flux and filtration efficiency of the NFS depended on the pore size and the results were compared with those for NFM from the same PA6 nanofiber material. Dead-end filtration of Saccharomyces cerevisiae was feasible at a low differential pressure of 3.5 kPa and cell filtration efficiency was > 99 %. Modelling of the filtration process revealed that cake formation is prevented by NFS filters since cells are able to penetrate into the filter and to adsorb on their internal surface. The filtration characteristics were also compared with commercial depth filters and revealed the high flux of NFS filters along with the possibility to avoid filter aids and a low environmental impact. PA6-NFS filters may become a new and cost effective generation of filters for removing different cells or cell debris from broth and other applications."
  year: 2022
  keywords: [{ name: "Yeast cell filtration" }, { name: "Nanofibrous polyamide sponge" }, { name: "Depth filtration" }, { name: "Pore blocking mechanism" }, { name: "3D nanofiber aerogel" }, { name: " Technische Chemie" }]
  class: [{ id: "660" name: "Technische Chemie" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/23848"
  sdgs: [{id: "sdg_3"}]
- subtype: { name: "Beitrag in wissenschaftlicher Zeitschrift" }
  language: "en"
- category: { name: "publications" }
+ category: [{ name: "publications" }, { name: "Beitrag in wissenschaftlicher Zeitschrift" }]
   departments: [{id: "department_N"}] 
 }, 
 {
@@ -127,39 +115,34 @@ title: "Supinationstrauma: Tape oder Stabilisationsschiene? : welches Hilfsmitte
  class: [{ id: "615.82" name: "Physiotherapie" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24321"
  sdgs: [{id: "sdg_3"}]
- subtype: { name: "Thesis: Bachelor" }
  language: "de"
- category: { name: "publications" }
+ category: [{ name: "publications" }, { name: "Thesis: Bachelor" }]
   departments: [{id: "department_G"}] 
 }, 
 {
 title: "Impact of RFI on GNSS and avionics : a view from the cockpit"
  authors: [{ fullname: "Osechas, Okuary" }, { fullname: "Felux, Michael" }, { fullname: "Fohlmeister, Friederike" }, { fullname: "Dautermann, Thomas" }]
- 
  abstract: "Introduction: The increase of Radio Frequency Interference (RFI) events is a well-documented trend, that is becoming a threat to the use of Global Navigation Satellite Systems (GNSS) in aviation. EUROCONTROL’s voluntary ATM incident reporting system EVAIR is a platform for pilot to report relevant incidents, such as GNSS outages. In the years 2018 and 2019 more than 4300 and 3500 GPS outages were reported compared to less than 500 events in the previous years. While the tool is giving a good geographic perspective about the typical RFI hotspots, it is ultimately based on voluntarily reported data. As pilots get used to widespread RFI in certain areas and Notices to Airmen (NOTAMs) are published that RFI should be expected, these events are considered to be normal. This likely leads to the numbers behind the GNSS outages reported in EVAIR being significantly underestimated. In this presentation we will give the audience a feel for why we believe this to be true: outages in GNSS service due to RFI initially manifest themselves in the cockpit in subtle ways, not immediately identifiable to the unaware. \n\nBackground: The Nicosia Flight Information Region (FIR) has long reported difficulties with GNSS service coverage. It regularly issues NOTAMs warning pilots of the phenomenon and kindly requests radio reports of such observations. Pilots regularly report loss of GNSS on approach to Larnaca International Airport (LCA) making the introduction of GNSS-based approach procedures impossible. While many aircraft can cope with GNSS outages easily by using terrestrial navigation aids and/or Inertial Reference Systems onboard the aircraft, some aircraft do not have this option and may require ATC support. This is causing an increase in workload for air traffic controllers and pilots of the affected aircraft alike. As a way to better understand the prevalence of the phenomenon and its implications on main-line aircraft, DLR flew its Airbus 320 to LCA, equipped with a variety of GNSS monitoring instruments, including the baseline avionics of the aircraft, a set of experimental GNSS receivers and a recorder for sampling the raw radio signal.\n\nObservations and Data: An important feature of the flight is that we have been able to analyze the phenomenon from several perspectives. This includes photographs of the cockpit displays, and matching recordings of GNSS signals, where available, in terms of pseudorange and signal-to-noise ratio. In addition, we collected raw, pre-correlator signal samples, the analysis of which offers a very particular category of insight. The raw signal was captured with a recording device, after being downconverted to baseband. The sampling rate was set to 30.7 MHz, at eight bits per sample. This quality of recording allows us to study the response of a GNSS receiver in “playback” mode, but it also enables an analysis of the frequency contents of the radio band in question. Reception and Impact While it is not a particularly novel message that GNSS signals are being jammed with RFI in some parts of the world, the aviation community has already reacted to our findings. Some of the results have been discussed at EUROCONTROL-hosted events, as well as a white paper. The Cypriot Department of Civil Aviation has, since, stated that the measurements prompted a revision of the threat model behind the RFI events. As for the wider aviation community, these observations and measurements clearly show a need to revise the paradigms for the provision of resilient navigation services. An outdate understanding of the RFI threat was based on individual drivers sporadically disrupting GNSS services at airports, for example by using GNSS privacy devices. Our measurements make it evident that this threat model is outdated, as GNSS outages clearly last several hours (potentially even more) and cover an entire FIR.\n\nThe Presentation: We will present the measurements and results discussed above in a presentation designed to create awareness of the impact of RFI on avionics hardware. During this flight we observed that it is easy for pilots to underappreciate the degree of disruption to their GNSS avionics. An important part of the message is that we have found no evidence of intentional misleading, inside the GNSS signals. The service disruptions are likely collateral to the geopolitical reality of the region. In this sense, the results show that there is no direct threat to the safety of air traffic and, consequently, the need to act may not be acute. The results do, however, show a need to modernize the airspace and CNS infrastructure, to reflect the evolving nature of the RFI threat. We consider it important to point to the reduction in redundancy, and therefore in safety, that stems from a systematic, permanent disruption of the primary means of navigation. Disruptions of GNSS are also known to increase controller workload and cause other forms of operational expenses, for example due to increased numbers of go-arounds."
  year: 2022
  keywords: [{ name: "GNSS interference" }, { name: "RFI" }, { name: "Jamming" }, { name: " Luftfahrt- und Fahrzeugtechnik" }]
  class: [{ id: "629" name: "Luftfahrt- und Fahrzeugtechnik" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24588"
  sdgs: [{id: "sdg_3"}]
- subtype: { name: "Konferenz: Sonstiges" }
  language: "en"
- category: { name: "publications" }
+ category: [{ name: "publications" }, { name: "Konferenz: Sonstiges" }]
   departments: [{id: "department_T"}] 
 }, 
 {
 title: "Value of co-benefits from energy saving ventilation systems : contingent valuations on Swiss home owners"
  authors: [{ fullname: "Boogen, Nina" }, { fullname: "Filippini, Massimo" }, { fullname: "Martinez-Cruz, Adan L." }]
- 
  abstract: "Previous efforts exploring options to increase residential sector’s energy efficiency have overlooked that highlighting co-benefits associated with energy efficiency may represent a promising strategy to draw attention from decision makers. For instance, in addition to savings in energy costs, buildings equipped with energy saving and comfort ventilation (ESV) system provide co-benefits such as improved indoor air quality (IAQ), thermal comfort, and noise reduction. These co-benefits are attributes of an experience goods as their value is difficult to appraise unless they have been experienced. This paper estimates the value of these co-benefits by inquiring willingness to accept (WTA) compensation to hold off on using ESV from Swiss owners of Minergie houses, which are equipped with ESV. Average monthly WTA is CHF 181 —value dominated by IAQ. WTA protocols may deliver overestimated values. Thus this paper estimates willingness to pay (WTP) on a sample of owners of conventional houses —i.e. respondents that have not experienced an ESV. Average monthly WTP is CHF 163 —value dominated by presence of allergies at home, an approximation to relevance of IAQ among respondents that have not experienced ESV. A back-of-the-envelope cost-benefit analysis informed with our estimates suggests that monthly benefits from ESV can be as much as twice the costs."
  year: 2022
  keywords: [{ name: "Co-benefits of energy efficiency" }, { name: "Residential investment decision" }, { name: "Willingness to accept" }, { name: "Willingness to pay" }, { name: "Swiss home owner" }, { name: " Energie" }]
  class: [{ id: "333.79" name: "Energie" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24742"
  sdgs: [{id: "sdg_11"}, {id: "sdg_7"}]
- subtype: { name: "Working Paper – Gutachten – Studie" }
  language: "en"
- category: { name: "publications" }
+ category: [{ name: "publications" },{ name: "Working Paper – Gutachten – Studie" }]
   departments: [{id: "department_W"}] 
 }, 
 {
@@ -171,84 +154,73 @@ title: "What is the relapse risk during treatment? : survivor analysis of single
  class: [{ id: "616.8" name: "Neurologie und Krankheiten des Nervensystems" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24727"
  sdgs: [{id: "sdg_3"}]
- subtype: { name: "Beitrag in wissenschaftlicher Zeitschrift" }
  language: "en"
- category: { name: "publications" }
+ category: [{ name: "publications" }, { name: "Beitrag in wissenschaftlicher Zeitschrift" }]
   departments: [{id: "department_G"}] 
 }, 
 {
 title: "Moderater Alkoholkonsum während Schwangerschaft und Stillzeit"
  authors: [{ fullname: "Pehlke-Milde, Jessica" }, { fullname: "Radu, Irina" }, { fullname: "Meyer, Yvonne" }, { fullname: "Gouilhers, Solène" }, { fullname: "Hammer, Raphaël" }]
- 
  abstract: ""
  year: 2022
  keywords: [{ name: "Alkoholkonsum" }, { name: "Schwangerschaft" }, { name: "Stillzeit" }, { name: "Risikowahrnehmung" }]
  class: [{ id: "618" name: "Geburtsmedizin und Hebammenarbeit" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/23869"
  sdgs: [{id: "sdg_3"}]
- subtype: { name: "Konferenz: Sonstiges" }
  language: "de"
- category: { name: "publications" }
+ category: [{ name: "publications" }, { name: "Konferenz: Sonstiges" }]
   departments: [{id: "department_G"}] 
 }, 
 {
 title: "Change in alcohol consumption and binge drinking in university students during the early COVID-19 pandemic"
  authors: [{ fullname: "Zysset, Annina" }, { fullname: "Volken, Thomas" }, { fullname: "Amendola, Simone" }, { fullname: "von Wyl, Agnes" }, { fullname: "Dratva, Julia" }]
- 
  abstract: "Objectives: Young adults have been overly affected by the containment measures against COVID-19 and, consequently, worsening in mental health and change in health behavior have been reported. Because the life phase of emerging adulthood is crucial for developing health behaviors, this study aims to examine increase in alcohol consumption, single and multiple binge drinking, and associated factors in students during lockdown and post-lockdown periods.\n\nMethods: A prospective open cohort study design with nine survey time points between April 2020 and June 2021 was conducted. The present study uses pooled data from the first survey T0 (3 April to 14 April) and follow-ups at T1 (30 April to 11 May 2020) and T2 (28 May to 8 June 2020). Students from all faculties of the Zurich University of Applied Sciences (ZHAW) (N = 12’431) were invited. Of the 1,300 students who participated at baseline and in at least one follow-up, 1,278 (98.3%) completed the questionnaires, final net sample size was 947. Generalized Estimating Equations (GEE) models were used to investigate the factors associated with increases in alcohol consumption based on number of occasions/last 30 days; drinks/week, and binge drinking at T0, and respective changes at T1 and T2 (increases, decreases, no change).\n\nResults: Overall, 20% of Swiss university students reported an increased alcohol consumption and 26% engaged in binge drinking. Number of drinks at baseline was associated with a higher probability of increased alcohol consumption, as well as engaging in single and multiple binge drinking events. Higher anxiety scores were associated with a higher probability to increase the alcohol consumption and engaging at least once in binge drinking. Additional factors associated with any binge drinking were male gender, younger age and not living with parents. Higher perceived social support was only associated with engaging in heavy binge drinking.\n\nConclusions: A substantial number of students developed a more risky health behavior regarding alcohol consumption. It is important to identify at risk students and design target prevention including factors such as age, gender and social norms. Further, health behavior and determinants of health behaviors of students should be carefully monitored during the further course of the pandemic."
  year: 2022
  keywords: [{ name: "Pandemie" }, { name: "Gesundheitsverhalten" }, { name: "Alkoholkonsum" }, { name: "Studierendengesundheit" }, { name: "Risky health behavior" }, { name: "Alcohol" }, { name: "Binge drinking" }, { name: "Anxiety" }, { name: "Student" }, { name: "Emerging adulthood" }, { name: "COVID-19" }, { name: "Lockdown" }]
  class: [{ id: "305" name: "Personengruppen (Alter, Herkunft, Geschlecht, Einkommen)" }, { id: "616.8" name: "Neurologie und Krankheiten des Nervensystems" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24898"
  sdgs: [{id: "sdg_3"}]
- subtype: { name: "Beitrag in wissenschaftlicher Zeitschrift" }
  language: "en"
- category: { name: "publications" }
+ category: [{ name: "publications" }, { name: "Beitrag in wissenschaftlicher Zeitschrift" }]
  departments: [ {id: "department_G"}, {id:  "department_P"} ] 
 }, 
 {
 title: "Inflationserwartungen und parteipolitische Überzeugungen : empirische Evidenz aus den Vereinigten Staaten von Amerika"
  authors: [{ fullname: "Bachmann, Oliver" }, { fullname: "Gründler, Klaus" }, { fullname: "Morales, Jonas" }, { fullname: "Potrafke, Niklas" }, { fullname: "Seiberlich, Ruben" }]
- 
  abstract: "Der Zustand der heimischen Wirtschaft wird durch die Brille parteipolitischer Überzeugungen unterschiedlich wahrgenommen. Regiert eine Partei, der die Bürger nahestehen, wird der Zustand der heimischen Wirtschaft (z.B. BIP-Wachstum, Arbeitslosigkeit, Inflation) von diesen Bürgern als besser wahrgenommen, als er tatsächlich ist. Anhand neuer Daten für Inflationserwartungen in den Vereinigten Staaten von Amerika zeigen unsere Ergebnisse, dass nach dem Präsidentschaftswechsel von Donald Trump zu Joe Biden, Bürger in US-Staaten mit republikanischen Mehrheiten eine höhere Inflationsrate erwarten als Bürger in US-Staaten mit demokratischen Mehrheiten."
  year: 2022
  keywords: []
  class: [{ id: "320" name: "Politik" }, { id: "332" name: "Finanzwirtschaft" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/25040"
  sdgs: [{id: "sdg_16"}, {id: "sdg_8"}]
- subtype: { name: "Beitrag in wissenschaftlicher Zeitschrift" }
  language: "de"
- category: { name: "publications" }
+ category: [{ name: "publications" },{ name: "Beitrag in wissenschaftlicher Zeitschrift" }]
   departments: [{id: "department_W"}] 
 }, 
 {
 title: "Umkleidezeit – aktueller Stand : rechtliche Qualifikation und Rechtsfolgen"
  authors: [{ fullname: "Petrik, Andreas" }]
-
  abstract: "RA lic. iur. Andreas Petrik entschlüsselt die Umkleidezeit anhand der kürzlich ergangenen Gerichtsurteile und zeigt auf, wie diese (öffentlich)arbeitsrechtlich zu qualifizieren ist und welche Rechtsfolgen daran anknüpfen."
  year: 2022
  keywords: []
  class: [{ id: "344" name: "Öffentliches Recht (CH), Arbeits-, Sozial-, Bildungs- und Kulturrecht" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24075"
  sdgs: [{id: "sdg_8"}]
- subtype: { name: "Beitrag in Magazin oder Zeitung" }
  language: "de"
- category: { name: "publications" }
+ category: [{ name: "publications" }, { name: "Beitrag in Magazin oder Zeitung" }]
   departments: [{id: "department_W"}] 
 }, 
 {
 title: "Waldbaden und Waldtherapie als innovative Ansätze mit gesundheitsförderndem Potenzial"
  authors: [{ fullname: "Föhn, Martina" }]
- 
  abstract: "«Waldbaden» und «Waldtherapie» erfreuen sich zunehmender Beliebtheit. In Japan ist shinrin yoku (Waldbaden) fester Bestandteil des Gesundheitssystems. Der Aufenthalt im Wald kann gemäss Studien die Herzaktivität, die Atmung und die Aktivität des Nervensystems verbessern. Das Klima des Waldes und die von den Bäumen freigesetzten Terpene können bei Stresssymptomen, Schlaf- und Aufmerksamkeitsstörungen sowie Depressionen positiv wirken. Achtsamkeitsübungen, die auf verschiedenen Sinneswahrnehmungen basieren, werden präventiv und rehabilitativ eingesetzt. Die aus Japan stammende Methode hat mittlerweile auch in Europa Eingang gefunden. In der Schweiz wird dieser neue Bereich durch Ausbildungsangebote erschlossen. Während in Deutschland sogar schon Wälder für die Gesundheitsförderung konzipiert wurden, stehen in der Schweiz Untersuchungen zum Thema Waldtherapie und Therapiewälder noch aus."
  year: 2022
  keywords: [{ name: "Forest therapy" }, { name: "Health" }, { name: "Mindfulness" }, { name: "Distress" }, { name: "Forest medicine" }, { name: "Shinrin yoku" }, { name: "Cortisol" }, { name: "Forest bathing" }]
  class: [{ id: "615" name: "Pharmakologie und Therapeutik" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/23944"
  sdgs: [{id: "sdg_14"}, {id: "sdg_15"}]
- subtype: { name: "Beitrag in wissenschaftlicher Zeitschrift" }
  language: "de"
- category: { name: "publications" }
+ category: [{ name: "publications" },  { name: "Beitrag in wissenschaftlicher Zeitschrift" }]
   departments: [{id: "department_N"}] 
 }, 
 {
@@ -261,9 +233,8 @@ title: "Suffizienz in der Ernährung : Entwicklung und Durchführung eines Works
  class: [{ id: "333" name: "Bodenwirtschaft und Ressourcen" }, { id: "613.2" name: "Diätetik" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24443"
  sdgs: [{id: "sdg_2"}, {id: "sdg_4"}]
- subtype: { name: "Thesis: Bachelor" }
  language: "de"
- category: { name: "publications" }
+ category: [{ name: "publications" }, { name: "Thesis: Bachelor" }]
   departments: [{id: "department_G"}] 
 }, 
 {
@@ -276,9 +247,8 @@ title: "Indicators for urban circular bioeconomy development : a systematic revi
  class: [{ id: "338.927" name: "Umweltökonomie und nachhaltige Entwicklung" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24678"
  sdgs: [{id: "sdg_11"}, {id: "sdg_15"}]
- subtype: { name: "Thesis: Master" }
  language: "en"
- category: { name: "publications" }
+ category: [{ name: "publications" }, { name: "Thesis: Master" }]
   departments: [{id: "department_N"}] 
 }
 ], upsert: true) {
@@ -302,9 +272,6 @@ title: "Indicators for urban circular bioeconomy development : a systematic revi
         }
         departments {
             id
-        }
-        subtype {
-            name
         }
         language
         category {
