@@ -1,6 +1,8 @@
 query {
     querySdg() {
         id
-        name
+        objectsAggregate {
+            count
+        }
     }
 }
