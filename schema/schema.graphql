@@ -18,16 +18,16 @@ type InfoObject @withSubscription {
     language: String
     link: String! @id @search(by: [exact])
     extras: String @search(by: [fulltext])
-    sdgs: [ Sdg ] 
+    sdgs: [ Sdg ] @hasInverse(field: objects) 
     keywords: [ Keyword ]
     class: [ PublicationClass ]
-    category: InfoObjectType
-    subtype: InfoObjectSubType 
-    departments: [Department]
+    category: InfoObjectType @hasInverse(field: objects)
+    subtype: InfoObjectSubType @hasInverse(field: objects)
+    departments: [Department] @hasInverse(field: objects)
     dateUpdate: DateTime
 }
 
-type Person {
+type Person @withSubscription {
     fullname: String @search(by: [term])
     initials: String @search(by: [exact])
     surname: String  @search(by: [term])
@@ -43,8 +43,9 @@ type Person {
     manager: Person @hasInverse(field: directreports)
     department: Department
     objects: [ InfoObject ] @hasInverse(field: persons)
-    synonyms: [ Author ]
+    pseudonyms: [ Author ]
     LDAPDN: String! @id @search(by: [exact])
+    retired: Int @search
     ad_check: Int @search 
 }
 
@@ -56,7 +57,7 @@ type Team {
 
 type Author @withSubscription {
     fullname: String! @id @search(by: [term]) 
-    person: Person @hasInverse(field: synonyms)
+    person: Person @hasInverse(field: pseudonyms)
     ad_check: Int @search
 }
 
