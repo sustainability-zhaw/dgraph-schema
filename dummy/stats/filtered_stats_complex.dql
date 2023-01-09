@@ -1,7 +1,5 @@
-# This is the root query to fetch all proper counts
-#
-# TODO: Check whether this is nicer handled 
-# using group by clauses
+# This applies deep filters on the info objects
+
 {   
     types(func: anyofterms(InfoObjectType.name, "publications modules projects")) {
         category: InfoObjectType.name
@@ -14,7 +12,7 @@
 
     sdg_pub(func: has(Sdg.objects)) {
         id: Sdg.id
-        n: count(Sdg.objects @groupby(category))
+        n: count(Sdg.objects @filter(uid_in(InfoObject.category, uid(ot_pub))))
     }
 
     dept_pub(func: has(Department.objects)) {

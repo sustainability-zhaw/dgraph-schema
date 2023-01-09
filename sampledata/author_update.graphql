@@ -1,0 +1,24 @@
+mutation {
+    addAuthor(input:[ 
+{
+    fullname: "Stohner, Jürgen",
+    person: {
+        fullname: "Stohner, Jürgen Mark"
+        initials: "sthj",
+        department:  {id: "department_N"},
+        LDAPDN: "cn=sthj",
+        ad_check: 123235032951395
+    }
+    ad_check: 123235032951395
+}
+     ], upsert: true){
+        author {
+            fullname
+            ad_check
+            person {
+                LDAPDN
+                ad_check
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+# This is the root query to fetch all proper counts
+#
+# TODO: Check whether this is nicer handled 
+# using group by clauses
+{   
+    var(func: has(Sdg.objects)) {
+        Sdg.objects @groupby(InfoObjectType) {
+            tcount as count(Sdg.objects)
+        }
+    }
+
+    bytype(func: uid(tcount)) {
+        type: InfoObjectType.name
+        n: val(tcount)
+    }
+}

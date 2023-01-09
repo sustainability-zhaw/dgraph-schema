@@ -4,7 +4,6 @@
         objects: count(InfoObjectType.objects)
     }
 
-
     sdg(func: has(Sdg.objects)) {
         Sdg.id
         objects: count(Sdg.objects)

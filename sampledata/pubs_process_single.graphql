@@ -1,0 +1,44 @@
+mutation {
+    addInfoObject(input: [
+{
+ title: "Lebensdauerverlängerung von Mobiltelefonen : der Entscheidungsprozess bei einem Reparaturfall in der Praxis"
+ authors: [{ fullname: "Karakas, Esra" }]
+ abstract: "Mobiltelefone und weitere elektronische Geräte gehören zum Alltag jeder Person und führt auch dazu, dass immer mehr davon produziert wird und somit die Anzahl der Geräte steigen. Doch für die Produktion wird eine hohe Menge an Ressourcen und Energie benötigt, welches zu einer Umweltbelastung führt. Mit einer Verlängerung der Nutzungs- sowie der Lebensdauer der Geräte kann die Abfallerzeugung sowie der Ressourcen- und Energieverbrauch minimiert und die Kreislaufeffizienz erhöht werden, welches im gesamten die Umweltbelastung reduziert. Die Verlängerung der Nutzungs- sowie Lebensdauer können durch Massnahmen, wie das Teilen, der Wiederverwendung, das Reparieren und der Wiederaufbereitung erzielt werden.\n\nDie vorliegende Thesis untersucht den Entscheidungsprozess der Reparaturshops bei einem Reparaturfall in der Deutschschweiz. Dabei werden autorisierte sowie nicht autorisierte Reparaturstellen in Betracht gezogen. Durch die gesamtheitliche Betrachtung des Entscheidungsprozesses werden Kriterien für die Beurteilung der Reparierbarkeit sowie Limitationen bei der Durchführbarkeit einer Reparatur eruiert. Gleichzeitig wird beim Beratungsprozess untersucht, ob und welche Empfehlungen den Kundinnen und Kunden durch die Reparaturshops gemacht werden. Abschliessend werden dabei die Unterschiede zwischen den autorisierten und nicht autorisierten Reparaturshops dargestellt. Um diese forschungsleitenden Fragen zu beantworten, wurden Interviews mit acht Expertinnen und Experten aus dem Reparaturbereich durchgeführt.\n\nDie Erkenntnisse aus den Interviews zeigen, dass bei der Bewertung der Reparierbarkeit die Kundenentscheidung, die Kostensicht, Garantie und Versicherung, diverse Richtlinien, die Durchlaufzeit sowie das Kriterium der Verlängerung der Nutzungs- und Lebensdauer beachtet werden. Die Reparierbarkeit wird jedoch von internen und externen Limitationen beeinträchtigt. Des Weiteren werden die Kundinnen und Kunden von allen befragten Reparaturshops beraten und erhalten entsprechende Empfehlungen. Dabei werden die Investitionsmöglichkeiten für Neugeräte oder wiederaufbereitete Mobiltelefone aufgezeigt. Auch werden die Nutzerinnen und Nutzer durch die Reparaturshops mit Bedienungshilfen unterstützt, wobei in einigen Fällen auch Reparaturen somit umgangen werden können. Zwischen den autorisierten und nicht autorisierten Reparaturshops sind ebenfalls Unterschiede hinsichtlich der Garantie, der Qualität, der Wahrnehmung durch die Kundinnen und Kunden sowie der Durchlaufzeit zu beobachten.\n\nDie Verlängerung der Nutzungs- und Lebensdauer der Mobiltelefone können durch Reparaturen gefördert werden und dies führt zur Reduktion der Umweltbelastung. Damit so viele Mobiltelefone wie möglich im Kreislauf behalten werden können, wird die aktive Rückförderung der Reparaturshops, der nicht mehr gebrauchten Geräte, als optimal betrachtet. Ferner sind schnelle und unkomplizierte Reparaturprozesse einzuführen, damit die Hemmschwelle für die Kundinnen und Kunden für die Durchführung der Reparaturen minimiert wird. Abschliessend sollen durch die Reparaturshops Zugang für die Nutzerinnen und Nutzer zu Informationen bezüglich Bedienungshilfen geschaffen werden."
+ year: 2021
+ keywords: [{ name: "Bodenwirtschaft und Ressourcen" }, { name: "Elektro-, Kommunikations-, Steuerungs- und Regelungstechnik" }]
+ class: [{ id: "333" name: "Bodenwirtschaft und Ressourcen" }, { id: "621.3" name: "Elektro-, Kommunikations-, Steuerungs- und Regelungstechnik" }]
+ link: "https://digitalcollection.zhaw.ch/handle/11475/24361" 
+ language: "de"
+ category: { name: "publications" }
+ subtype: { name: "Thesis: Bachelor" }
+ departments: [ {id: "department_N"}] 
+}
+], upsert: true) {
+    infoObject {
+        title
+        persons {
+            fullname
+        }
+        year
+        abstract
+        keywords {
+            name
+        }
+        class {
+            id
+            name
+        }
+        link
+        sdgs {
+            id
+        }
+        departments {
+            id
+        }
+        language
+        category {
+            name
+        }
+    }
+}
+}
