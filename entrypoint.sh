@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Allow dgraph to initialize
+echo prepare db init
 sleep 20
 
 echo clear the database
