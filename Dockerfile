@@ -3,6 +3,8 @@ FROM ubuntu:22.04
 LABEL maintainer="phish108 <cpglahn@gmail.com>"
 LABEL org.opencontainers.image.source="https://github.com/sustainability-zhaw/dgraph-schema"
 
+ENV DGRAPH_SERVER=
+
 RUN useradd -m -d /data automator && \
     apt-get update && \
     DEBIAN_FRONTEND=noninteractive \
