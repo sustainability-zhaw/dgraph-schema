@@ -1,0 +1,58 @@
+
+{ 
+  	# the filter
+  
+  	ot_obj as var(func: has(InfoObject.link)) 
+      @cascade {
+        uid
+        InfoObject.persons @filter(eq(Person.initials,"zyss")) {
+			uid
+        }
+ 	 }
+      
+    # main nav stats
+      
+    types(func: has(InfoObjectType.name)) {
+		id: InfoObjectType.name
+      	n: count(InfoObjectType.objects @filter(uid_in(InfoObject.category, uid(ot_pub)) and uid(ot_obj)))
+    }
+    
+    ot_persons as var(func: has(Person.LDAPDN)) @cascade {
+      	uid
+		Person.objects @filter(uid(ot_obj)) {
+			uid
+        }
+    }
+      
+    persons(func: uid(ot_persons)){
+		n: count(uid)
+    }
+      
+    # constrained stats for the section
+    
+    # The section filter
+
+    ot_pub as var(func: allofterms(InfoObjectType.name, "publications")) {
+    	uid
+    }
+
+    # how many matches are in the curent view  
+
+    sdg_pub(func: has(Sdg.objects)) {
+        id: Sdg.id
+        n: count(Sdg.objects @filter(uid_in(InfoObject.category, uid(ot_pub)) AND uid(ot_obj)))
+    }
+
+    dept_pub(func: has(Department.objects)) {
+        id: Department.id
+        n: count(Department.objects @filter(uid_in(InfoObject.category, uid(ot_pub)) and uid(ot_obj)))
+    }
+    
+    # author count
+    # need a helper variable to sort by counts
+    authors(func: has(Person.LDAPDN)) @filter(uid(ot_persons)) {
+		id: Person.LDAPDN
+        n: count(Person.objects @filter(uid_in(InfoObject.category, uid(ot_pub)) and uid(ot_obj)))
+    }      
+    
+}
