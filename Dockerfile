@@ -4,6 +4,7 @@ LABEL maintainer="phish108 <cpglahn@gmail.com>"
 LABEL org.opencontainers.image.source="https://github.com/sustainability-zhaw/dgraph-schema"
 
 ENV DGRAPH_SERVER=
+ENV SAMPLE_DATA=
 
 RUN useradd -m -d /data automator && \
     apt-get update && \
@@ -21,6 +22,8 @@ RUN useradd -m -d /data automator && \
 WORKDIR /data 
 
 COPY schema /data/schema
+COPY sampledata /data/sampledata
+
 COPY entrypoint.sh /data
 
 RUN chmod 500 /data/entrypoint.sh && \
