@@ -1,58 +1,93 @@
 
 { 
   	# the filter
-  
-  	ot_obj as var(func: has(InfoObject.link)) 
+
+  	vFilter as var(func: has(InfoObject.link)) 
+      #@filter(
+      #  alloftext(InfoObject.title, "term") or 
+      #  alloftext(InfoObject.abstract, "term") or 
+      #  alloftext(InfoObject.extras, "term")
+      #)
       @cascade {
         uid
-        InfoObject.persons @filter(eq(Person.initials,"zyss")) {
-			uid
-        }
+        
+        # cascading filters 
+
+        #InfoObject.persons @filter(
+        #    eq(Person.initials,"zyss") and
+        #    eq(Person.initials,"borz")
+        #  ) {
+		#	uid
+        #}
+
+        #InfoObject.department @filter(
+        #    eq(Department.id, "department_N") and 
+        #    eq(Department.id, "department_W")
+        #  ) {
+        #    uid
+        #}
+
+        #InfoObject.sdgs @filter(
+        #    eq(Sdg.id, "sdg_1") and 
+        #    eq(Sdg.id, "sdg_2")
+        #  ) {
+        #    uid
+        #}
+
+        #InfoObject.keywords @filter(anyofterms(Keyword.name, "term")) {
+        #    uid
+        #}
+
+        #InfoObject.class @filter(anyofterms(PublicationClass.name, "term")) {
+        #    uid
+        #}
  	 }
-      
+
+    # The section filter
+
+    vObjectType as var(func: allofterms(InfoObjectType.name, "publications")) {
+    	uid
+    }
+
+    # everything from this point onwards remains unaltered
+
     # main nav stats
       
     types(func: has(InfoObjectType.name)) {
 		id: InfoObjectType.name
-      	n: count(InfoObjectType.objects @filter(uid_in(InfoObject.category, uid(ot_pub)) and uid(ot_obj)))
+      	n: count(InfoObjectType.objects @filter(uid(vFilter)))
     }
     
-    ot_persons as var(func: has(Person.LDAPDN)) @cascade {
+    vPersons as var(func: has(Person.LDAPDN)) @cascade {
       	uid
-		Person.objects @filter(uid(ot_obj)) {
+		Person.objects @filter(uid(vFilter)) {
 			uid
         }
     }
       
-    persons(func: uid(ot_persons)){
+    persons(func: uid(vPersons)){
 		n: count(uid)
     }
       
     # constrained stats for the section
     
-    # The section filter
-
-    ot_pub as var(func: allofterms(InfoObjectType.name, "publications")) {
-    	uid
-    }
-
     # how many matches are in the curent view  
 
-    sdg_pub(func: has(Sdg.objects)) {
+    sdgs(func: has(Sdg.objects)) {
         id: Sdg.id
-        n: count(Sdg.objects @filter(uid_in(InfoObject.category, uid(ot_pub)) AND uid(ot_obj)))
+        n: count(Sdg.objects @filter(uid_in(InfoObject.category, uid(vObjectType)) AND uid(vFilter)))
     }
 
-    dept_pub(func: has(Department.objects)) {
+    departments(func: has(Department.objects)) {
         id: Department.id
-        n: count(Department.objects @filter(uid_in(InfoObject.category, uid(ot_pub)) and uid(ot_obj)))
+        n: count(Department.objects @filter(uid_in(InfoObject.category, uid(vObjectType)) and uid(vFilter)))
     }
     
     # author count
-    # need a helper variable to sort by counts
-    authors(func: has(Person.LDAPDN)) @filter(uid(ot_persons)) {
+    # need a helper variable to sort by counts, more tests required
+    # right now, the count shows all contributions in the current section
+    authors(func: uid(vPersons)) {
 		id: Person.LDAPDN
-        n: count(Person.objects @filter(uid_in(InfoObject.category, uid(ot_pub)) and uid(ot_obj)))
+        n: count(Person.objects @filter(uid_in(InfoObject.category, uid(vObjectType)) and uid(vFilter)))
     }      
-    
 }

@@ -15,7 +15,7 @@ type InfoObject @withSubscription {
     authors: [ Author ]
     year: Int @search 
     abstract: String @search(by: [fulltext])
-    language: String
+    language: String @search(by: [exact])
     link: String! @id @search(by: [exact])
     extras: String @search(by: [fulltext])
     sdgs: [ Sdg ] @hasInverse(field: objects) 
@@ -24,7 +24,7 @@ type InfoObject @withSubscription {
     category: InfoObjectType @hasInverse(field: objects)
     subtype: InfoObjectSubType @hasInverse(field: objects)
     departments: [Department] @hasInverse(field: objects)
-    dateUpdate: DateTime
+    dateUpdate: DateTime @search
 }
 
 type Person @withSubscription {
