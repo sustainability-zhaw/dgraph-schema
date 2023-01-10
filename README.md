@@ -35,3 +35,12 @@ services:
 ```
 
 `db_init` terminates after completing the entrypoint script. This allows one to use the database through the exposed hosts. 
+
+## Example queries
+
+Dgraph exposes two querying endpoints: 
+
+- `/graphql` - for graphQL queries
+- `/query` - for dgraph DQL queries
+
+dgraph's native RATEL UI supports **only** DQL queries. 
