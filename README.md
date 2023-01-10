@@ -1,4 +1,5 @@
 # dgraph-schema
+
 A schema for the sustainability dashboard
 
 This repository keeps the schema and the constants for ZHAW's sustainanbility dashboard. 
@@ -44,3 +45,37 @@ Dgraph exposes two querying endpoints:
 - `/query` - for dgraph DQL queries
 
 dgraph's native RATEL UI supports **only** DQL queries. 
+
+Example queries are found in the `examples` folder. Any query file that ends on `dql` is a DQL query and needs be forwarded to the `/query` endpoint. Query files that ends on `graphql` or `gql` is a GraphQL query and has to be submitted to the `/graphql` endpoint. 
+
+The following example uses the `examples/getsdg.graphql` file with the following contents: 
+
+```graphql
+query {
+    querySdg() {
+        id
+        objectsAggregate {
+            count
+        }
+    }
+}
+```
+
+This query is executed with the following `curl` command. The `Content-Type`-header is required as dgraph has no automatic content type detection. Note that `-s` is just for ommitting `curl`'s progress bar.
+
+```bash
+curl -s \
+     -X POST http://localhost:8080/graphql \
+     -H 'Content-Type: application/graphql' \
+     --data-binary '@examples/getsdg.graphql' 
+```
+
+In order to verify data only, the use of `jq` is recommended. To extract just the `data` portion of the previous example use:
+
+```bash
+curl -s \
+     -X POST http://localhost:8080/graphql \
+     -H 'Content-Type: application/graphql' \
+     --data-binary '@examples/getsdg.graphql' \
+     | jq .data
+```
