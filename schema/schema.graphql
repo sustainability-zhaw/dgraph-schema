@@ -25,6 +25,7 @@ type InfoObject @withSubscription {
     subtype: InfoObjectSubType @hasInverse(field: objects)
     departments: [Department] @hasInverse(field: objects)
     dateUpdate: DateTime @search
+    sdg_check: int @search
 }
 
 type Person @withSubscription {

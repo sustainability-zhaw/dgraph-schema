@@ -19,4 +19,4 @@ services:
     restart: 'no'
     environment:
       DGRAPH_SERVER: http://dgraph_standalone:8080
-      SAMPLE_DATA: plain_pubs
+      SAMPLE_DATA: pubs_and_persons
