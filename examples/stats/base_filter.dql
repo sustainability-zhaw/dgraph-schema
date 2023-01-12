@@ -2,7 +2,7 @@
 { 
   	# the filter
 
-  	vFilter as var(func: has(InfoObject.link)) 
+  	vFilter as var(func: type(InfoObject)) 
       #@filter(
       #  alloftext(InfoObject.title, "term") or 
       #  alloftext(InfoObject.abstract, "term") or 
@@ -53,12 +53,12 @@
 
     # main nav stats
       
-    types(func: has(InfoObjectType.name)) {
+    infoobjecttype(func: type(InfoObjectType)) {
 		id: InfoObjectType.name
       	n: count(InfoObjectType.objects @filter(uid(vFilter)))
     }
     
-    vPersons as var(func: has(Person.LDAPDN)) @cascade {
+    vPersons as var(func: type(Person)) @cascade {
       	uid
 		Person.objects @filter(uid(vFilter)) {
 			uid
@@ -73,20 +73,20 @@
     
     # how many matches are in the curent view  
 
-    sdgs(func: has(Sdg.objects)) {
+    sdg(func: type(Sdg)) {
         id: Sdg.id
         n: count(Sdg.objects @filter(uid_in(InfoObject.category, uid(vObjectType)) AND uid(vFilter)))
     }
 
-    departments(func: has(Department.objects)) {
+    department(func: type(Department)) {
         id: Department.id
         n: count(Department.objects @filter(uid_in(InfoObject.category, uid(vObjectType)) and uid(vFilter)))
     }
     
     # author count
     # need a helper variable to sort by counts, more tests required
-    # right now, the count shows all contributions in the current section
-    authors(func: uid(vPersons)) {
+    # right now, the count shows all contributions in the current   section
+    persons(func: uid(vPersons)) {
 		id: Person.LDAPDN
         n: count(Person.objects @filter(uid_in(InfoObject.category, uid(vObjectType)) and uid(vFilter)))
     }      
