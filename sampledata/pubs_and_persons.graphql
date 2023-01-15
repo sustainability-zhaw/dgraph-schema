@@ -256,6 +256,21 @@ title: "Clarification of yeast cell suspensions by a highly porous polyamide nan
   departments: [{id: "department_N"}] 
 }, 
 {
+title: "Exploration dualer Dachbegrünungssysteme"
+ authors: [{ fullname: "Ebert, Jürgen" }, { fullname: "Tribelhorn, Roman" }, { fullname: "Adlhart, Christian" }]
+ persons: [{ LDAPDN: "cn=ebju" }, { LDAPDN: "cn=adas" } ]
+ abstract: "Immer mehr Grün- und Brachflächen im Siedlungsgebiet werden aufgrund des steigenden Bedarfs an Wohnraum und der im neuen Raumplanungsgesetz angestrebten Inneren Verdichtung überbaut. Dadurch gehen wichtige Lebensräume für die einheimische Flora und Fauna verloren. Durch die Umzonung von Landwirtschaftsflächen in Bauland, schwinden wichtige Produktionsstandorte in den städtischen Gebieten. Dachbegrünungen können hier Abhilfe schaffen, in dem sie als Ersatzlebensraum und Produktionsfläche fungieren. Im 2017 realisierte die Forschungsgruppe Stadtökologie der Zürcher Hochschule für Angewandte Wissenschaften ein Duales Dachbegrünungssystem auf dem Dach des Kehrichtheizkraftwerkes St. Gallen, welches diese beiden Aspekte vereint. Für den Artenschutz wurden Magerwiesen geschaffen und unter dem Gesichtspunkt der Urbanen Landwirtschaft wird in denselben Flächen Rebbau betrieben.\n\nIm Rahmen dieser Arbeit wurde eruiert, ob sich der konträre Nährstoffhaushalt beider Nutzungsformen mit sich vereinbaren lässt und wie die Risikofaktoren in Einklang mit den Systemanforderungen gebracht werden können. Dazu wurden die Substrate der Magerwiesen und Rebtröge auf bodenökologische Faktoren untersucht sowie Vegetationsanalysen vorgenommen. Zudem wurde anhand der Trieblängen der Reben eine Vitalitätsbeurteilung durchgeführt.\n\nAufgrund der Nährstoffanalysen konnte aufgezeigt werden, dass sich die Magerwiesen bei allen Sichtaufbauten und Substraten etabliere können. Beim Substrat der Rebtröge wurde ein Mangel der Makronährstoffe Phosphor und Stickstoff festgestellt, welcher die Ursache für die festgestellte Wachstumsdepression bei einem Teil der Reben sein könnte. Die Vegetationsanalysen zeigen, dass es sich um eine junge Vegetation handelt, die im Anfangsstadium ihrer Entwicklung steht. Aufgrund der undifferenzierten Zeigerwerte konnten keine Rückschlüsse auf die Standortbedingungen gezogen werden. Die Resultate der Nährstoffanalysen sind diesbezüglich aussagekräftiger."
+ year: 2018
+ keywords: [{ name: "Roof top Farming" }, { name: "Nährstoffregulierung" }, { name: "Duales Dachbegrünungssystem" }, { name: "Magerwiesen" }, { name: "Orchideenwiese" }, { name: "Urbane Landwirtschaft" }, { name: "Wachstumsdepression" }, { name: "Zeigerwerte" }, { name: "Weinbau auf dem Dach" }, { name: " Landflächen, Naturerholungsgebiete" }]
+ class: [{ id: "333.7" name: "Landflächen, Naturerholungsgebiete" }]
+ link: "https://digitalcollection.zhaw.ch/handle/11475/23438"
+ sdgs: [{id: "sdg_11"}, {id: "sdg_2"}]
+ language: "de"
+ category: { name: "publications" }
+ subtype: {name: "Beitrag in wissenschaftlicher Zeitschrift" }
+  departments: [{id: "department_N"}] 
+}, 
+{
 title: "Supinationstrauma: Tape oder Stabilisationsschiene? : welches Hilfsmittel bringt während der Rehabilitation eines Supinationstraumas einen besseren Nutzen?"
  authors: [{ fullname: "Baumann, Mirja" }, { fullname: "Brander, Sarah" }]
 
@@ -286,6 +301,21 @@ title: "Impact of RFI on GNSS and avionics : a view from the cockpit"
   departments: [{id: "department_T"}] 
 }, 
 {
+title: "Impact of RFI on GNSS and avionics : a view from below"
+ authors: [{ fullname: "Osechas, Okuary" }, { fullname: "Felux, Michael" }, { fullname: "Fohlmeister, Friederike" }, { fullname: "Dautermann, Thomas" }]
+ persons: [{ LDAPDN: "cn=felu" }]
+ abstract: "Introduction: The increase of Radio Frequency Interference (RFI) events is a well-documented trend, that is becoming a threat to the use of Global Navigation Satellite Systems (GNSS) in aviation. EUROCONTROL’s voluntary ATM incident reporting system EVAIR is a platform for pilot to report relevant incidents, such as GNSS outages. In the years 2018 and 2019 more than 4300 and 3500 GPS outages were reported compared to less than 500 events in the previous years. While the tool is giving a good geographic perspective about the typical RFI hotspots, it is ultimately based on voluntarily reported data. As pilots get used to widespread RFI in certain areas and Notices to Airmen (NOTAMs) are published that RFI should be expected, these events are considered to be normal. This likely leads to the numbers behind the GNSS outages reported in EVAIR being significantly underestimated. In this presentation we will give the audience a feel for why we believe this to be true: outages in GNSS service due to RFI initially manifest themselves in the cockpit in subtle ways, not immediately identifiable to the unaware. \n\nBackground: The Nicosia Flight Information Region (FIR) has long reported difficulties with GNSS service coverage. It regularly issues NOTAMs warning pilots of the phenomenon and kindly requests radio reports of such observations. Pilots regularly report loss of GNSS on approach to Larnaca International Airport (LCA) making the introduction of GNSS-based approach procedures impossible. While many aircraft can cope with GNSS outages easily by using terrestrial navigation aids and/or Inertial Reference Systems onboard the aircraft, some aircraft do not have this option and may require ATC support. This is causing an increase in workload for air traffic controllers and pilots of the affected aircraft alike. As a way to better understand the prevalence of the phenomenon and its implications on main-line aircraft, DLR flew its Airbus 320 to LCA, equipped with a variety of GNSS monitoring instruments, including the baseline avionics of the aircraft, a set of experimental GNSS receivers and a recorder for sampling the raw radio signal.\n\nObservations and Data: An important feature of the flight is that we have been able to analyze the phenomenon from several perspectives. This includes photographs of the cockpit displays, and matching recordings of GNSS signals, where available, in terms of pseudorange and signal-to-noise ratio. In addition, we collected raw, pre-correlator signal samples, the analysis of which offers a very particular category of insight. The raw signal was captured with a recording device, after being downconverted to baseband. The sampling rate was set to 30.7 MHz, at eight bits per sample. This quality of recording allows us to study the response of a GNSS receiver in “playback” mode, but it also enables an analysis of the frequency contents of the radio band in question. Reception and Impact While it is not a particularly novel message that GNSS signals are being jammed with RFI in some parts of the world, the aviation community has already reacted to our findings. Some of the results have been discussed at EUROCONTROL-hosted events, as well as a white paper. The Cypriot Department of Civil Aviation has, since, stated that the measurements prompted a revision of the threat model behind the RFI events. As for the wider aviation community, these observations and measurements clearly show a need to revise the paradigms for the provision of resilient navigation services. An outdate understanding of the RFI threat was based on individual drivers sporadically disrupting GNSS services at airports, for example by using GNSS privacy devices. Our measurements make it evident that this threat model is outdated, as GNSS outages clearly last several hours (potentially even more) and cover an entire FIR.\n\nThe Presentation: We will present the measurements and results discussed above in a presentation designed to create awareness of the impact of RFI on avionics hardware. During this flight we observed that it is easy for pilots to underappreciate the degree of disruption to their GNSS avionics. An important part of the message is that we have found no evidence of intentional misleading, inside the GNSS signals. The service disruptions are likely collateral to the geopolitical reality of the region. In this sense, the results show that there is no direct threat to the safety of air traffic and, consequently, the need to act may not be acute. The results do, however, show a need to modernize the airspace and CNS infrastructure, to reflect the evolving nature of the RFI threat. We consider it important to point to the reduction in redundancy, and therefore in safety, that stems from a systematic, permanent disruption of the primary means of navigation. Disruptions of GNSS are also known to increase controller workload and cause other forms of operational expenses, for example due to increased numbers of go-arounds."
+ year: 2020
+ keywords: [{ name: "GNSS interference" }, { name: "RFI" }, { name: "Jamming" }, { name: " Luftfahrt- und Fahrzeugtechnik" }]
+ class: [{ id: "629" name: "Luftfahrt- und Fahrzeugtechnik" }]
+ link: "https://digitalcollection.zhaw.ch/handle/11475/24388"
+ sdgs: [{id: "sdg_3"}]
+ language: "en"
+ category: { name: "publications" }
+ subtype: { name: "Konferenz: Sonstiges" }
+  departments: [{id: "department_T"}] 
+}, 
+{
 title: "Value of co-benefits from energy saving ventilation systems : contingent valuations on Swiss home owners"
  authors: [{ fullname: "Boogen, Nina" }, { fullname: "Filippini, Massimo" }, { fullname: "Martinez-Cruz, Adan L." }]
  persons: [{ LDAPDN: "cn=boog"}]
@@ -294,6 +324,36 @@ title: "Value of co-benefits from energy saving ventilation systems : contingent
  keywords: [{ name: "Co-benefits of energy efficiency" }, { name: "Residential investment decision" }, { name: "Willingness to accept" }, { name: "Willingness to pay" }, { name: "Swiss home owner" }, { name: " Energie" }]
  class: [{ id: "333.79" name: "Energie" }]
  link: "https://digitalcollection.zhaw.ch/handle/11475/24742"
+ sdgs: [{id: "sdg_11"}, {id: "sdg_7"}]
+ language: "en"
+ category: { name: "publications" }
+ subtype: { name: "Working Paper – Gutachten – Studie" }
+  departments: [{id: "department_W"}] 
+}, 
+{
+title: "Value of co-benefits from energy saving ventilation systems : contingent valuations on Swiss home owners"
+ authors: [{ fullname: "Boogen, Nina" }, { fullname: "Filippini, Massimo" }, { fullname: "Maeier, Lisa" }]
+ persons: [{ LDAPDN: "cn=boog"}]
+ abstract: "Previous efforts exploring options to increase residential sector’s energy efficiency have overlooked that highlighting co-benefits associated with energy efficiency may represent a promising strategy to draw attention from decision makers. For instance, in addition to savings in energy costs, buildings equipped with energy saving and comfort ventilation (ESV) system provide co-benefits such as improved indoor air quality (IAQ), thermal comfort, and noise reduction. These co-benefits are attributes of an experience goods as their value is difficult to appraise unless they have been experienced. This paper estimates the value of these co-benefits by inquiring willingness to accept (WTA) compensation to hold off on using ESV from Swiss owners of Minergie houses, which are equipped with ESV. Average monthly WTA is CHF 181 —value dominated by IAQ. WTA protocols may deliver overestimated values. Thus this paper estimates willingness to pay (WTP) on a sample of owners of conventional houses —i.e. respondents that have not experienced an ESV. Average monthly WTP is CHF 163 —value dominated by presence of allergies at home, an approximation to relevance of IAQ among respondents that have not experienced ESV. A back-of-the-envelope cost-benefit analysis informed with our estimates suggests that monthly benefits from ESV can be as much as twice the costs."
+ year: 2021
+ keywords: [{ name: "Co-benefits of energy efficiency" }, { name: "Residential investment decision" }, { name: "Willingness to accept" }, { name: "Willingness to pay" }, { name: "Swiss home owner" }, { name: " Energie" }]
+ class: [{ id: "333.79" name: "Energie" }]
+ link: "https://digitalcollection.zhaw.ch/handle/11475/24542"
+ sdgs: [{id: "sdg_11"}, {id: "sdg_7"}]
+ language: "en"
+ category: { name: "publications" }
+ subtype: { name: "Working Paper – Gutachten – Studie" }
+  departments: [{id: "department_W"}] 
+},
+{
+title: "Value of co-benefits from energy saving ventilation systems : contingent valuations on Swiss home owners"
+ authors: [{ fullname: "Boogen, Nina" }, { fullname: "Flotoi, Claudia" }, { fullname: "Maeier, Lisa" }]
+ persons: [{ LDAPDN: "cn=boog"}]
+ abstract: "Previous efforts exploring options to increase residential sector’s energy efficiency have overlooked that highlighting co-benefits associated with energy efficiency may represent a promising strategy to draw attention from decision makers. For instance, in addition to savings in energy costs, buildings equipped with energy saving and comfort ventilation (ESV) system provide co-benefits such as improved indoor air quality (IAQ), thermal comfort, and noise reduction. These co-benefits are attributes of an experience goods as their value is difficult to appraise unless they have been experienced. This paper estimates the value of these co-benefits by inquiring willingness to accept (WTA) compensation to hold off on using ESV from Swiss owners of Minergie houses, which are equipped with ESV. Average monthly WTA is CHF 181 —value dominated by IAQ. WTA protocols may deliver overestimated values. Thus this paper estimates willingness to pay (WTP) on a sample of owners of conventional houses —i.e. respondents that have not experienced an ESV. Average monthly WTP is CHF 163 —value dominated by presence of allergies at home, an approximation to relevance of IAQ among respondents that have not experienced ESV. A back-of-the-envelope cost-benefit analysis informed with our estimates suggests that monthly benefits from ESV can be as much as twice the costs."
+ year: 2020
+ keywords: [{ name: "Co-benefits of energy efficiency" }, { name: "Residential investment decision" }, { name: "Willingness to accept" }, { name: "Willingness to pay" }, { name: "Swiss home owner" }, { name: " Energie" }]
+ class: [{ id: "333.79" name: "Energie" }]
+ link: "https://digitalcollection.zhaw.ch/handle/11475/23542"
  sdgs: [{id: "sdg_11"}, {id: "sdg_7"}]
  language: "en"
  category: { name: "publications" }
