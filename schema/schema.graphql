@@ -1,6 +1,7 @@
 type Sdg {
     id: String! @id @search(by: [exact])
     objects: [InfoObject] @hasInverse(field: sdgs) 
+    matches: [ SdgMatch ] @hasInverse(field: sdg)
 }
 
 type Department {
@@ -26,6 +27,8 @@ type InfoObject @withSubscription {
     departments: [Department] @hasInverse(field: objects)
     dateUpdate: DateTime @search
     sdg_check: Int @search
+    authororder: [ AuthorOrder ]
+    sdg_matches: [ SdgMatch ]
 }
 
 type Person @withSubscription {
@@ -60,6 +63,24 @@ type Author @withSubscription {
     fullname: String! @id @search(by: [term]) 
     person: Person @hasInverse(field: pseudonyms)
     ad_check: Int @search
+}
+
+# Per Object Significant Author Order. 
+type AuthorOrder {
+    author: Author 
+    position: Int
+    object: InfoObject @hasInverse(field: authororder)
+    label: String
+}
+
+# Matching terms for the indexing process
+type SdgMatch {
+    id: String @search(exact)
+    match: String
+    required_context: String
+    forbidden_context: String
+    sdg: Sdg @hasInverse(field: matches)
+    objects: [ InfoObject ] @hasInverse(field: sdg_matches)
 }
 
 type InfoObjectType { 
