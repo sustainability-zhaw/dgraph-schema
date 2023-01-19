@@ -27,7 +27,7 @@ type InfoObject @withSubscription {
     departments: [Department] @hasInverse(field: objects)
     dateUpdate: DateTime @search
     sdg_check: Int @search
-    authororder: [ AuthorOrder ]
+    authororder: [ AuthorOrdering ]
     sdg_matches: [ SdgMatch ]
 }
 
@@ -66,7 +66,7 @@ type Author @withSubscription {
 }
 
 # Per Object Significant Author Order. 
-type AuthorOrder {
+type AuthorOrdering {
     author: Author 
     position: Int
     object: InfoObject @hasInverse(field: authororder)
