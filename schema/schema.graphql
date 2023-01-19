@@ -75,7 +75,7 @@ type AuthorOrder {
 
 # Matching terms for the indexing process
 type SdgMatch {
-    id: String @search(exact)
+    id: String! @id @search(by: [exact])
     match: String
     required_context: String
     forbidden_context: String
