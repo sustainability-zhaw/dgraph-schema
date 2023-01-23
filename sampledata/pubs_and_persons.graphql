@@ -137,6 +137,83 @@ mutation {
         }
     }
 
+    addSDGMatch(input: [
+        {
+            construct: "sdg1_c1_de",
+            language: "de",
+            keyword: "foo",
+            required_context: "bar",
+            forbidden_context: "",
+            sdg: {
+                id: "sdg_1"
+            }
+        },
+        {
+            construct: "sdg1_c1_en",
+            language: "en",
+            keyword: "foo",
+            required_context: "bar",
+            forbidden_context: "",
+            sdg: {
+                id: "sdg_1"
+            }
+        },
+        {
+            construct: "sdg7_c1_en",
+            language: "en",
+            keyword: "energy",
+            required_context: "",
+            forbidden_context: "global warming",
+            sdg: {
+                id: "sdg_7"
+            }
+        },
+        {
+            construct: "sdg7_c2_en",
+            language: "en",
+            keyword: "energy crisis",
+            required_context: "",
+            forbidden_context: "global warming",
+            sdg: {
+                id: "sdg_7"
+            }
+        },
+        {
+            construct: "sdg7_c2_de",
+            language: "en",
+            keyword: "energie",
+            required_context: "",
+            forbidden_context: "globale erwärmung",
+            sdg: {
+                id: "sdg_7"
+            }
+        },
+        {
+            construct: "sdg13_c2_en",
+            language: "en",
+            keyword: "energy crisis",
+            required_context: "global warming",
+            forbidden_context: "",
+            sdg: {
+                id: "sdg_13"
+            }
+        },
+        {
+            construct: "sdg13_c2_de",
+            language: "en",
+            keyword: "energie",
+            required_context: "globale erwärmung",
+            forbidden_context: "",
+            sdg: {
+                id: "sdg_13"
+            }
+        }
+    ]) {
+        SdgMatch {
+            construct
+        }
+    }
+
     addInfoObject(input: [
 {
 title: "Lebensdauerverlängerung von Mobiltelefonen : der Entscheidungsprozess bei einem Reparaturfall in der Praxis"
