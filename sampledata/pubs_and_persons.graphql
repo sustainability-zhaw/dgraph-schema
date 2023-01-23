@@ -137,7 +137,7 @@ mutation {
         }
     }
 
-    addSDGMatch(input: [
+    addSdgMatch(input: [
         {
             construct: "sdg1_c1_de",
             language: "de",
@@ -209,7 +209,7 @@ mutation {
             }
         }
     ]) {
-        SdgMatch {
+        sdgMatch {
             construct
         }
     }
