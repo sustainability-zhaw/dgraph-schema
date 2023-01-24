@@ -1,0 +1,17 @@
+{
+    "query": "mutation addSdgMatch($matcher: [AddSdgMatchInput!]!) { addSdgMatch(input: $matcher) { sdgMatch { construct } } }",
+    "variables": {
+        "matcher":[ {
+      "construct": "sdg16_c86_de",
+      "language": "de",
+      "keyword": "Freiheit der Rede",
+      "required_context": ""
+    },
+    {
+      "construct": "sdg16_c86_fr",
+      "language": "fr",
+      "keyword": "liberté d'expression",
+      "required_context": ""
+    }]
+    }
+}

@@ -1,0 +1,48 @@
+mutation {
+    addPerson(input:[
+         {
+            construct: "sdg1_c1_en",
+            language: "en",
+            keyword: "extreme poverty",
+            required_context: "global warming",
+            forbidden_context: "",
+            sdg: {
+                id: "sdg_13"
+            }
+        },
+        {
+            construct: "sdg1_c1_de",
+            language: "de",
+            keyword: "energie",
+            required_context: "globale erwärmung",
+            forbidden_context: "",
+            sdg: {
+                id: "sdg_13"
+            }
+        },
+        {
+            construct: "sdg1_c1_fr",
+            language: "fr",
+            keyword: "energie",
+            required_context: "globale erwärmung",
+            forbidden_context: "",
+            sdg: {
+                id: "sdg_13"
+            }
+        },
+        {
+            construct: "sdg1_c1_it",
+            language: "it",
+            keyword: "energie",
+            required_context: "globale erwärmung",
+            forbidden_context: "",
+            sdg: {
+                id: "sdg_13"
+            }
+        }
+    ]) {
+        sdgMatch {
+            construct
+        }
+    }
+}
