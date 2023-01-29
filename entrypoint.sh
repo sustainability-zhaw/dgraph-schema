@@ -4,10 +4,12 @@
 echo "prepare db init"
 
 
-if [[ ! -z $SAMPLE_DATA ]]
+if [[ ! -z $TIMEOUT ]]
 then
     TIMEOUT=10
 fi
+
+echo "wait for the DB to initialise for $TIMEOUT seconds"
 
 sleep $TIMEOUT
 
