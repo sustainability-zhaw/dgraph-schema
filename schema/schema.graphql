@@ -12,7 +12,6 @@ type Department {
 
 type InfoObject @withSubscription {
     title: String @search(by: [fulltext])
-    persons: [ Person ] 
     authors: [ Author ]
     year: Int @search 
     abstract: String @search(by: [fulltext])
@@ -46,7 +45,6 @@ type Person @withSubscription {
     directreports: [ Person ] @hasInverse(field: manager)
     manager: Person @hasInverse(field: directreports)
     department: Department
-    objects: [ InfoObject ] @hasInverse(field: persons)
     pseudonyms: [ Author ]
     LDAPDN: String! @id @search(by: [exact])
     retired: Int @search
@@ -62,6 +60,8 @@ type Team {
 type Author @withSubscription {
     fullname: String! @id @search(by: [term]) 
     person: Person @hasInverse(field: pseudonyms)
+    objects: [ InfoObject ] @hasInverse(field: authors)
+
     ad_check: Int @search
 }
 
