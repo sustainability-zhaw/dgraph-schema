@@ -3,10 +3,9 @@
 # Allow dgraph to initialize
 echo "prepare db init"
 
-
 if [[ ! -z $TIMEOUT ]]
 then
-    TIMEOUT=10
+    TIMEOUT=20
 fi
 
 echo "wait for the DB to initialise for $TIMEOUT seconds"
