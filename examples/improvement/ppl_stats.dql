@@ -1,25 +1,12 @@
 query myDemoQuery($terms: string, $user: string) {
-  # BEGIN FILTERHELPERS
   
-  ah0 as var(func: type(Author)) @cascade {
-		Author.person @filter(eq(Person.initials, $user)) {
-      uid
-    }
-  }
-  
-  dp0 as var(func: type(Department)) @filter(eq(Department.id, "department_N")) {
-    uid
-  }
-   
-  # END FILTERHELPERS 
-
 # BEGIN HELPER OBJECT
+# needed for sorting 
+
     pps as var(func: has(Person.pseudonyms))
       {
         Person.pseudonyms {
     		np as count(Author.objects 
-                # filter
-                @filter(uid_in(InfoObject.departments, uid(dp0)) and uid_in(InfoObject.authors, uid(ah0))) 
             )
         }
         tmpn as sum(val(np))

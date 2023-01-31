@@ -1,6 +1,6 @@
 query myDemoQuery($terms: string) {
   cat(func: eq(InfoObjectType.name, $terms)) {
-    p: InfoObjectType.objects(first: 5)  {
+    p: InfoObjectType.objects(first: 5, offset: 0)  {
 			InfoObject.link
       InfoObject.year
     }
