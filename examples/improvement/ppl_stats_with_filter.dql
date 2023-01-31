@@ -24,8 +24,11 @@ query myDemoQuery($terms: string, $user: string) {
       {
         Person.pseudonyms {
     		np as count(Author.objects 
-                # filter
-                @filter(uid_in(InfoObject.category, uid(categ)) and uid_in(InfoObject.departments, uid(dp0)) and uid_in(InfoObject.authors, uid(ah0))) 
+                
+                @filter(uid_in(InfoObject.category, uid(categ)) 
+                        # filter
+                        and uid_in(InfoObject.departments, uid(dp0)) and uid_in(InfoObject.authors, uid(ah0))
+                ) 
             )
         }
         tmpn as sum(val(np))
