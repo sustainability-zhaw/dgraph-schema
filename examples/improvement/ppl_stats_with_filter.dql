@@ -11,15 +11,14 @@ query myDemoQuery($terms: string, $user: string) {
     uid
   }
 
-# END FILTERHELPERS 
+  # END FILTERHELPERS 
 
   categ as var(func: type(InfoObjectType)) @filter(eq(InfoObjectType.name, $terms)) {
     uid
   }
-   
-  
+ 
+  # BEGIN HELPER OBJECT
 
-# BEGIN HELPER OBJECT
     pps as var(func: has(Person.pseudonyms))
       {
         Person.pseudonyms {
@@ -33,8 +32,11 @@ query myDemoQuery($terms: string, $user: string) {
         }
         tmpn as sum(val(np))
     }
+
   # END HELPER OBJECT
 
+  # selector
+  
   people(func: uid(pps), orderdesc: val(tmpn), first: 50, offset: 0) @filter(gt(val(tmpn), 0)){
 		Person.initials
         Person.surname
