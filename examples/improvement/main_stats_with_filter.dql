@@ -39,6 +39,5 @@ query myDemoQuery($terms: string, $user: string) {
       @filter(uid_in(Person.pseudonyms, uid(aph))) 
       {
 		n: count(uid)
-    # Person.initials
   }
 }
