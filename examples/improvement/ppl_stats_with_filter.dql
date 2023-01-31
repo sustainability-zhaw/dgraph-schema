@@ -10,8 +10,14 @@ query myDemoQuery($terms: string, $user: string) {
   dp0 as var(func: type(Department)) @filter(eq(Department.id, "department_N")) {
     uid
   }
+
+# END FILTERHELPERS 
+
+  categ as var(func: type(InfoObjectType)) @filter(eq(InfoObjectType.name, $terms)) {
+    uid
+  }
    
-  # END FILTERHELPERS 
+  
 
 # BEGIN HELPER OBJECT
     pps as var(func: has(Person.pseudonyms))
@@ -19,7 +25,7 @@ query myDemoQuery($terms: string, $user: string) {
         Person.pseudonyms {
     		np as count(Author.objects 
                 # filter
-                @filter(uid_in(InfoObject.departments, uid(dp0)) and uid_in(InfoObject.authors, uid(ah0))) 
+                @filter(uid_in(InfoObject.category, uid(categ)) and uid_in(InfoObject.departments, uid(dp0)) and uid_in(InfoObject.authors, uid(ah0))) 
             )
         }
         tmpn as sum(val(np))

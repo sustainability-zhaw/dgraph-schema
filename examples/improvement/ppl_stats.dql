@@ -1,12 +1,16 @@
 query myDemoQuery($terms: string, $user: string) {
-  
-# BEGIN HELPER OBJECT
-# needed for sorting 
 
+ categ as var(func: type(InfoObjectType)) @filter(eq(InfoObjectType.name, $terms)) {
+    uid
+  }
+
+# BEGIN HELPER OBJECT
     pps as var(func: has(Person.pseudonyms))
       {
         Person.pseudonyms {
     		np as count(Author.objects 
+                # filter
+                @filter(uid_in(InfoObject.category, uid(categ))) 
             )
         }
         tmpn as sum(val(np))
