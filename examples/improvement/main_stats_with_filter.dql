@@ -1,0 +1,44 @@
+query myDemoQuery($terms: string, $user: string) {
+  # BEGIN FILTERHELPERS
+  
+  ah0 as var(func: type(Author)) @cascade {
+		Author.person @filter(eq(Person.initials, $user)) {
+      uid
+    }
+  }
+  
+  dp0 as var(func: type(Department)) @filter(eq(Department.id, "department_N")) {
+    uid
+  }
+   
+  # END FILTERHELPERS 
+
+  # BEGIN EXTRA FILTERHELPERS
+
+  aph as var(func: type(Author)) @cascade {
+		Author.objects 
+    #object filter
+    @filter(uid_in(InfoObject.departments, uid(dp0)) and uid_in(InfoObject.authors, uid(ah0)))
+    {
+			uid
+    }
+  }
+
+  # END EXTRA FILTERHELPERS
+
+  cat(func: type(InfoObjectType)) {
+    name: InfoObjectType.name
+    n: count(InfoObjectType.objects 
+      # object filter
+      @filter(uid_in(InfoObject.departments, uid(dp0)) and uid_in(InfoObject.authors, uid(ah0))))
+  }
+  
+
+  pps(func: has(Person.pseudonyms)) 
+      # extra filter
+      @filter(uid_in(Person.pseudonyms, uid(aph))) 
+      {
+		n: count(uid)
+    # Person.initials
+  }
+}

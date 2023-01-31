@@ -1,0 +1,26 @@
+query myDemoQuery($terms: string, $user: string) {
+
+  # BEGIN FILTERHELPERS
+  
+  ah0 as var(func: type(Author)) @cascade {
+		Author.person @filter(eq(Person.initials, $user)) {
+      uid
+    }
+  }
+  
+  dp0 as var(func: type(Department)) @filter(eq(Department.id, "department_N")) {
+    uid
+  }
+   
+  # END FILTERHELPERS 
+    
+  cat(func: eq(InfoObjectType.name, $terms)) {
+    p: InfoObjectType.objects(first: 5, offset: 0,  orderdesc: InfoObject.year) 
+    # filter
+    @filter(uid_in(InfoObject.departments, uid(dp0)) and uid_in(InfoObject.authors, uid(ah0)))
+    {
+	  InfoObject.link
+      InfoObject.year
+    }
+  }
+}

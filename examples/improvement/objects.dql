@@ -1,0 +1,8 @@
+query myDemoQuery($terms: string) {
+  cat(func: eq(InfoObjectType.name, $terms)) {
+    p: InfoObjectType.objects(first: 5)  {
+			InfoObject.link
+      InfoObject.year
+    }
+  }
+}

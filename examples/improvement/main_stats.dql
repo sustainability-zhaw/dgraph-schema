@@ -1,0 +1,13 @@
+query myDemoQuery($terms: string) {
+  # Filters go here and then use uid_in filters in the stats
+  
+  cat(func: type(InfoObjectType)) {
+    name: InfoObjectType.name
+    n: count(InfoObjectType.objects)
+  }
+
+  # Version without filters
+  pps(func: has(Person.pseudonyms)) {
+		n: count(uid)
+  }
+}
