@@ -1,0 +1,21 @@
+query {
+        
+  pps as var(func: has(Person.pseudonyms)) {
+        Person.pseudonyms {
+    		np as count( Author.objects )
+        }
+        tmpn as sum(val(np))
+    }
+
+    person(func: uid(pps), first: 20, offset: 0, orderdesc: val(tmpn), orderasc: Person.surname) @filter(gt(val(tmpn), 0)) {
+        id: Person.LDAPDN
+      	n: val(tmpn)
+        initials: Person.initials
+        surname: Person.surname
+        givenname: Person.givenname
+        mail: Person.mail
+        telephone: Person.ipphone
+        
+     }
+
+}
