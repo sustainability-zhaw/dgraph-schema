@@ -12,9 +12,12 @@ echo "wait for the DB to initialise for $TIMEOUT seconds"
 
 sleep $TIMEOUT
 
-echo "clear the database"
+if [[ ! -z $FORCE_RESET ]]
+then
+    echo "clear the database"
 
-curl -s -X POST ${DGRAPH_SERVER}/alter -d '{"drop_op": "DATA"}'
+    curl -s -X POST ${DGRAPH_SERVER}/alter -d '{"drop_op": "DATA"}'
+fi
 
 echo
 echo "Install the schema "

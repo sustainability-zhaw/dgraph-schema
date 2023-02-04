@@ -6,6 +6,7 @@ LABEL org.opencontainers.image.source="https://github.com/sustainability-zhaw/dg
 ENV DGRAPH_SERVER=
 ENV SAMPLE_DATA=
 ENV TIMEOUT=
+ENV FORCE_RESET=
 
 RUN useradd -m -d /data automator && \
     apt-get update && \
