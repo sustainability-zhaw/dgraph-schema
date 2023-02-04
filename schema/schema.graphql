@@ -11,13 +11,13 @@ type Department {
 }
 
 type InfoObject @withSubscription {
-    title: String @search(by: [fulltext])
+    title: String @search(by: [fulltext, trigram])
     authors: [ Author ]
     year: Int @search 
-    abstract: String @search(by: [fulltext])
+    abstract: String @search(by: [fulltext, trigram])
     language: String @search(by: [exact])
     link: String! @id @search(by: [exact])
-    extras: String @search(by: [fulltext])
+    extras: String @search(by: [fulltext, trigram])
     sdgs: [ Sdg ] @hasInverse(field: objects) 
     keywords: [ Keyword ]
     class: [ PublicationClass ]
@@ -31,11 +31,12 @@ type InfoObject @withSubscription {
 }
 
 type Person @withSubscription {
-    fullname: String @search(by: [term])
+    LDAPDN: String! @id @search(by: [exact])
+    fullname: String @search(by: [term, trigram]) # always empty?
     initials: String @search(by: [exact])
-    surname: String  @search(by: [term])
-    givenname: String
-    displayname: String
+    surname: String  @search(by: [term, trigram])
+    givenname: String @search(by: [term, trigram])
+    displayname: String @search(by: [term, trigram])
     gender: String
     title: String
     mail: String
@@ -46,7 +47,6 @@ type Person @withSubscription {
     manager: Person @hasInverse(field: directreports)
     department: Department
     pseudonyms: [ Author ]
-    LDAPDN: String! @id @search(by: [exact])
     retired: Int @search
     ad_check: Int @search 
 }
