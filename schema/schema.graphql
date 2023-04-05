@@ -1,6 +1,15 @@
+type Mandate {
+    id: String! @id @search(by: [exact])
+    name: String @search(by: [term, trigram])
+    url: String
+    topics: [Sdg] @hasInverse(field: mandate)
+    matches: [SdgMatch] @hasInverse(field: mandate) 
+}
+
 type Sdg {
     id: String! @id @search(by: [exact])
-    objects: [InfoObject] @hasInverse(field: sdgs) 
+    objects: [InfoObject] @hasInverse(field: sdgs)
+    mandate: Mandate 
 }
 
 type Department {
@@ -85,6 +94,7 @@ type SdgMatch @withSubscription {
     sdg: Sdg 
     objects: [ InfoObject ] @hasInverse(field: sdg_matches)
     dateUpdate: DateTime @search
+    mandate: Mandate
 }
 
 type InfoObjectType { 

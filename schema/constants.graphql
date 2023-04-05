@@ -1,5 +1,17 @@
 mutation {
 
+    addMandate(input: [
+        {
+            id: "sdg",
+            name: "Sustainable Development Goals",
+            url: "https://sdg-dashboard.zhaw.ch"
+        }
+    ], upsert: true) {
+        mandate {
+            id
+        }
+    }
+
     addInfoObjectType(input: [
         { name: "publications" },
         { name: "projects" },
@@ -11,23 +23,23 @@ mutation {
     }
 
     addSdg(input: [
-        { id: "sdg_1" },
-        { id: "sdg_2" },
-        { id: "sdg_3" },
-        { id: "sdg_4" },
-        { id: "sdg_5" },
-        { id: "sdg_6" },
-        { id: "sdg_7" },
-        { id: "sdg_8" },
-        { id: "sdg_9" },
-        { id: "sdg_10" },
-        { id: "sdg_11" },
-        { id: "sdg_12" },
-        { id: "sdg_13" },
-        { id: "sdg_14" },
-        { id: "sdg_15" },
-        { id: "sdg_16" },
-        { id: "sdg_17" } 
+        { id: "sdg_1", mandate: { id: "sdg" }},
+        { id: "sdg_2", mandate: { id: "sdg" } },
+        { id: "sdg_3", mandate: { id: "sdg" } },
+        { id: "sdg_4", mandate: { id: "sdg" } },
+        { id: "sdg_5", mandate: { id: "sdg" } },
+        { id: "sdg_6", mandate: { id: "sdg" } },
+        { id: "sdg_7", mandate: { id: "sdg" } },
+        { id: "sdg_8", mandate: { id: "sdg" } },
+        { id: "sdg_9", mandate: { id: "sdg" } },
+        { id: "sdg_10", mandate: { id: "sdg" } },
+        { id: "sdg_11", mandate: { id: "sdg" } },
+        { id: "sdg_12", mandate: { id: "sdg" } },
+        { id: "sdg_13", mandate: { id: "sdg" } },
+        { id: "sdg_14", mandate: { id: "sdg" } },
+        { id: "sdg_15", mandate: { id: "sdg" } },
+        { id: "sdg_16", mandate: { id: "sdg" } },
+        { id: "sdg_17", mandate: { id: "sdg" } } 
     ], upsert: true) {
         sdg {
             id
