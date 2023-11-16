@@ -9,6 +9,7 @@ type Mandate {
 type Sdg {
     id: String! @id @search(by: [exact])
     objects: [InfoObject] @hasInverse(field: sdgs)
+    matches: [SdgMatch] @hasInverse(field: sdg)
     mandate: Mandate 
 }
 
