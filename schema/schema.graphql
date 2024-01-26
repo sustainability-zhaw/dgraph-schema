@@ -10,7 +10,7 @@ type Sdg {
     id: String! @id @search(by: [exact])
     objects: [InfoObject] @hasInverse(field: sdgs)
     matches: [SdgMatch] @hasInverse(field: sdg)
-    mandate: Mandate 
+    mandate: Mandate @hasInverse(field: topics)
 }
 
 type Department {
@@ -21,22 +21,22 @@ type Department {
 
 type InfoObject @withSubscription {
     title: String @search(by: [fulltext, trigram])
-    authors: [ Author ]
+    authors: [ Author ] @hasInverse(field: objects)
     year: Int @search 
     abstract: String @search(by: [fulltext, trigram])
     language: String @search(by: [exact])
     link: String! @id @search(by: [exact])
     extras: String @search(by: [fulltext, trigram])
     sdgs: [ Sdg ] @hasInverse(field: objects) 
-    keywords: [ Keyword ]
-    class: [ PublicationClass ]
+    keywords: [ Keyword ] @hasInverse(field: objects)
+    class: [ PublicationClass ] @hasInverse(field: objects)
     category: InfoObjectType @hasInverse(field: objects)
     subtype: InfoObjectSubType @hasInverse(field: objects)
     departments: [Department] @hasInverse(field: objects)
     dateUpdate: DateTime @search
     sdg_check: Int @search
-    authororder: [ AuthorOrdering ]
-    sdg_matches: [ SdgMatch ]
+    authororder: [ AuthorOrdering ] @hasInverse(field: objects)
+    sdg_matches: [ SdgMatch ] @hasInverse(field: objects)
     start_date: DateTime @search
     end_date: DateTime @search
 }
@@ -56,8 +56,8 @@ type Person @withSubscription {
     team: Team
     directreports: [ Person ] @hasInverse(field: manager)
     manager: Person @hasInverse(field: directreports)
-    department: Department
-    pseudonyms: [ Author ]
+    department: Department @hasInverse(field: persons)
+    pseudonyms: [ Author ] @hasInverse(field: person)
     retired: Int @search
     ad_check: Int @search 
 }
@@ -94,7 +94,7 @@ type SdgMatch @withSubscription {
     required_context: String @search(by: [exact])
     forbidden_context: String @search(by: [exact])
     language: String @search(by: [exact])
-    sdg: Sdg 
+    sdg: Sdg @hasInverse(field: matches)
     objects: [ InfoObject ] @hasInverse(field: sdg_matches)
     dateUpdate: DateTime @search
     mandate: Mandate
