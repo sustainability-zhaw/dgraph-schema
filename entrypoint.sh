@@ -3,7 +3,7 @@
 # Allow dgraph to initialize
 echo "prepare db init"
 
-if [[ ! -z $TIMEOUT ]]
+if [[ -z $TIMEOUT ]]
 then
     TIMEOUT=20
 fi
