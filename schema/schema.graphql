@@ -81,6 +81,7 @@ type AuthorOrdering {
     author: Author 
     position: Int
     label: String
+    objects: [ InfoObject ] @hasInverse(field: authororder)
 }
 
 # Matching terms for the indexing process
