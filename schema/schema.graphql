@@ -39,6 +39,7 @@ type InfoObject @withSubscription {
     sdg_matches: [ SdgMatch ] @hasInverse(field: objects)
     start_date: DateTime @search
     end_date: DateTime @search
+    extra_json: String
 }
 
 type Person @withSubscription {
