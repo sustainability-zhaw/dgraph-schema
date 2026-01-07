@@ -39,7 +39,13 @@ type InfoObject @withSubscription {
     sdg_matches: [ SdgMatch ] @hasInverse(field: objects)
     start_date: DateTime @search
     end_date: DateTime @search
-    extra_json: String
+    moduleId: String
+    version: String
+    level: String
+    course: String
+    semester: String
+    organizer: String
+    credits: String
 }
 
 type Person @withSubscription {
@@ -121,4 +127,9 @@ type PublicationClass {
 type Keyword {
     name: String! @id @search(by: [term, trigram])
     objects: [ InfoObject ] @hasInverse(field: keywords)
+}
+
+type ExtractionLastRun {
+  serviceId: String! @id @search
+  lastRunAt: DateTime
 }
